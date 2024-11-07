@@ -10,8 +10,13 @@ from viz_analysis import VizAnalysis2
 
 st.title("Customer Based Quality Analysis")
 
-with st.expander("Transaction Data Generation"):
+st.write("The sections below is to examine the data that has been generated as basis for analysis"
+         ". The data used here is a dummy data, however the format should reflect the data that needs to be prepared for the analysis being possible to be done.")
+
+with st.expander("Transaction Data Generation", expanded=True):
     st.markdown("### Transaction Data Generation")
+    st.write("Start Date and End Date needs to be selected to generate the dummy transaction data.")
+    
     # Load treatment data
     treatment_df = pd.read_csv(r'Item Code and Treatments/treatment_with_details.csv')
 
@@ -37,6 +42,8 @@ with st.expander("Transaction Data Generation"):
     days = (end_date - start_date).days
 
     st.write(f"Days Between: {days}")
+    
+    st.markdown("**Transaction Data**")
 
     # Create an instance of the class
     transaction_generator = ModelTransactionGenerator(
@@ -57,6 +64,8 @@ with st.expander("Transaction Data Generation"):
 
     # Display the generated DataFrame
     st.dataframe(patient_transaction_df)
+    
+    st.write("Transaction Data above hold the format of the data that is needed for the analysis.")
 
 st.divider()
 
@@ -65,6 +74,8 @@ st.markdown("# Descriptive Analytics")
 st.markdown("## Overall Summary")
 
 st.markdown('### Transaction vs. Number of Patient')
+st.write("Transaction vs Number of Patient explain the average ratio of transaction per number of unique, active patient in yearly basis")
+
 transaction_vs_patient_chart, average_transaction_per_year, average_patients_per_year= transaction_generator.transaction_vs_patient()
 
 st.plotly_chart(transaction_vs_patient_chart)
@@ -83,6 +94,11 @@ with col3:
 
 st.markdown("## Per Patient Summary")
 
+with st.popover("Explain Per Patient Summary"):
+    st.write("Per Patient Summary table below explain the summarized performance per customer since their first time doing transaction with us up to now.")
+    st.write("You could examine their Total Spending with the clinic denoted as Grand Total, Total Material Cost of treatments being provided to them, total Treatment Frequency"
+            ", their average spending per treatment, their first and last transaction in the clinic.")
+
 per_patient_summary = transaction_generator.per_patient_summary()
 
 per_patient_summary.to_csv('per_patient_summary.csv', index=False)  
@@ -91,6 +107,15 @@ st.dataframe(per_patient_summary)
 
 
 st.markdown("## Net Customer Gain")
+
+with st.popover("Explain Net Customer Gain"):
+    st.write("Net Customer Gain explains the difference between new arriving patients minus leaving patients in a particular year")
+    st.write("**The assumption here is that**: If a customer from previous year is not coming back for any transaction on this year, then they are counted as leaving customer of this year"
+            ". And if a customer doing transaction on this year but does not have any transaction last year, they are counted as new customer.")
+    st.write("The assumption effectively take one-year gap to decide and define whether customer is considered leaving and new. The gap is adjustable")
+    
+    st.write("**Note**: Leaving and New Patient count cannot be calculated during the first given years of input data because we don't have information about prior years"
+             ", hence cannot determine which patients are leaving from prior years and which of them are new for that year.")
 
 net_customer_gain, unique_patient = transaction_generator.create_net_customer_gain()
 
@@ -101,9 +126,16 @@ st.dataframe(net_customer_gain[['Year', 'New Patient', 'Leaving Patient', 'Net P
 st.plotly_chart(transaction_generator.plot_combo_chart(net_customer_gain))
 
 st.plotly_chart(transaction_generator.plot_combo_chart_general(net_customer_gain, x='Year', y1='Total Unique Patients', y1_name='Total Active Patients', graph_title='Total Active Patients'))
+st.write("Note: Total Active Patients above assumes that customer is considered as active if they are still with the clinic, doing transaction within span of a year. Again this assumption is adjustable")
 
 
 st.markdown("## Customer Lifetime Value Analysis")
+
+with st.popover("Explain Customer Lifetime Value Analysis"):
+    st.write("Customer Lifetime Value Analysis examine the lifetime of customers doing transaction with the clinic. The analysis assess their remaining lifetime (days) and their expected remaining spending in that remaining lifetime")
+    st.write("**The Assumption is that**: A customer has three years lifetime in a clinic. Customer whose lifetime value being analysed are those who last transaction is not older than a year from current/today's date"
+             ". The expected remaining lifetime value is proportionally calculated based on specific customer's spending trend.")
+    
 
 st.write(f"Assumption of Today's Date: {end_date}")
 
@@ -124,6 +156,8 @@ with col2:
 st.divider()
 
 st.markdown("## Demographic Analysis")
+
+st.write("Demographic Analysis here is specifically examining about customer analysis by Age demographic")
 
 st.markdown("### Age Distribution")
 
@@ -148,6 +182,7 @@ age_class_df =  transaction_generator.age_segmentation(age_class)
 
 age_class_df = st.data_editor(age_class_df, key="age_class_data", hide_index=True)
 
+st.write("Note: The generated age cluster is evenly divide the clusters of age range respect to the youngest customer and oldest customer")
 
 # Function to map the Age Cluster
 def map_age_cluster(age):
@@ -161,10 +196,12 @@ per_patient_summary['Age Cluster'] = per_patient_summary['Age'].apply(map_age_cl
 
 age_group_histogram = viz.histogram(per_patient_summary, 'Grand Total', 'Age Cluster')
 st.plotly_chart(age_group_histogram)
+st.write("Note: Histogram of Grand Total shows the total spending of patients based on age group. Please click on specific age group one time to exclude them in histogram, and click on twice to include only them.")
 
 st.markdown("**Age Group Swarm Plot**")
 age_swarm_plot = viz.plot_swarm(x='Age Cluster')
 st.plotly_chart(age_swarm_plot)
+st.write("The swarm plot above explain the disparity of total spending of the patients across age group clusters")
 
 
 with st.expander("High & Low Analytics"):
