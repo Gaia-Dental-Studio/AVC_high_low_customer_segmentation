@@ -100,7 +100,7 @@ class ModelTransactionGenerator:
                 }
 
                 # Append the transaction to the list
-                transactions.append(transaction)
+                transactions = pd.concat([pd.DataFrame(transactions), pd.DataFrame([transaction])], ignore_index=True)
 
                 # Update the accumulated total price for the year
                 current_total_price += price
@@ -222,12 +222,8 @@ class ModelTransactionGenerator:
             
             # Get array of unique patient IDs for the current year
             unique_patients_list = current_year_df['Patient ID'].unique().tolist()
-            
-            # Append the result to unique_patient DataFrame
-            unique_patient = unique_patient.append({
-                'Year': year,
-                'Patients': unique_patients_list
-            }, ignore_index=True)
+            # Append the result to unique_patient DataFrame using concat
+            unique_patient = pd.concat([unique_patient, pd.DataFrame({'Year': [year], 'Patients': [unique_patients_list]})], ignore_index=True)
             
             if year == start_date.year:
                 # Skip new patient calculation for the first year
@@ -263,16 +259,16 @@ class ModelTransactionGenerator:
                 # For the last year, check all patients from the prior year
                 previous_year_patients = patient_transaction_df[patient_transaction_df['Year'] == year - 1]['Patient ID'].unique()
                 leaving_patients_count = len([pid for pid in previous_year_patients if pid not in current_year_df['Patient ID'].values])
-
-            # Append the results to net_customer_gain DataFrame
-            net_customer_gain = net_customer_gain.append({
+                # Append the results to net_customer_gain DataFrame using concat
+            new_row = pd.DataFrame([{
                 'Year': year,
                 'New Patient': new_patients_count,
                 'Leaving Patient': leaving_patients_count,
                 'Net Patient Gain': new_patients_count - leaving_patients_count,
                 'Total Unique Patients': total_unique_patients_count
-            }, ignore_index=True)
-            
+            }])
+            net_customer_gain = pd.concat([net_customer_gain, new_row], ignore_index=True)
+        
             # net_customer_gain = net_customer_gain.drop(columns='Total Unique Patients')
             net_customer_gain['Year'] = net_customer_gain['Year'].astype(str)
             net_customer_gain['Percentage Net Gain'] = net_customer_gain['Net Patient Gain'] / net_customer_gain['Total Unique Patients'] * 100
