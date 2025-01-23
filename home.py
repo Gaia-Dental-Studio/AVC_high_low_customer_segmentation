@@ -3,16 +3,16 @@ from streamlit_navigation_bar import st_navbar
 import main_app
 import analytics
 import analytics2
+import customer_based_app
+import rfm_analysis
 
 # Create navigation bar with two options
-selection = st_navbar(["Calculator", "Existing Analytics"])
+selection = st_navbar(["Customer-Based Analysis", "RFM Analysis"])
 
-if selection == "Calculator":
-    main_app.app()
+if selection == "Customer-Based Analysis":
+    customer_based_app.app()
 
-elif selection == "Existing Analytics":
+elif selection == "RFM Analysis":
 
-    analytics2.app()
+    rfm_analysis.app()
     
-elif selection == "Test":
-    analytics.app()
