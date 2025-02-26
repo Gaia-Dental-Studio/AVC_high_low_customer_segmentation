@@ -1,0 +1,511 @@
+NO,TANGGAL,NAMA PASIEN,ALAMAT LENGKAP,Nomor Hp,MEMBER,NON MEMBER,KELUHAN,UMUM/ GIGI,MEMBER FEE,NON MEMBER FEE,Member Remark,Age Category,Age,Gender,Cleaned DIAGNOSA,Cleaned TERAPI OBAT
+1,2023-01-03,suparno,Desa Kanung 07/01,,MEMBER,,sakit gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),58.0,L,['gingival abscess'],"['clindamycin (3x1 dosage)', 'piroxicam (2x1 dosage)']"
+2,2023-01-03,roikhan,Ds Kanung 05/02,82229436214,MEMBER,,kontrol gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),32.0,L,"['gingivitis marginalis kronis', 'pulpitis irreversible']",['scaling procedure']
+3,2022-01-05,ely ernawati,Desa rejosari RT/RW 02/01,,NON MEMBER,,scaling,P GIGI,,60000.0,0,Dewasa (19-59 thn),34.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+4,2023-01-09,deafi septina,Desa rejosari RT/RW 1/1,08581552550060,MEMBER,,cabut gigi,P GIGI,,0.0,1,Anak (6-18 thn),15.0,P,['persistensi'],['exo ce']
+5,2023-01-12,siti amirul,Rejosari 7/2,081234377794,,NON MEMBER,cabut gigi,P GIGI,,90000.0,0,Dewasa (19-59 thn),40.0,P,"['pulpitis irversible', 'gingivitis marginalis kronis']",['scaling procedure']
+6,2023-01-13,dyah prabaningrum,Dolopo,081335459047,,NON MEMBER,karang gigi,P GIGI,,0.0,0,Dewasa (19-59 thn),27.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+7,2023-01-13,erlin muktiani,Ds Lebakayu 07/02 Sawahan,,,NON MEMBER,scaling,P GIGI,,65000.0,0,Dewasa (19-59 thn),26.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+8,2023-01-16,kuniyem,Desa Rejosari 07/02,,MEMBER,,sakit gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),49.0,P,['gingival abscess'],"['scaling procedure', 'pct 1x1']"
+9,2023-01-16,kheri suko setyo,Cidodol 04/06 Grogol Selatan,,,NON MEMBER,karang gigi,P GIGI,,105000.0,0,Dewasa (19-59 thn),52.0,L,"['pulpitis irreversible', 'gingivitis marginalis kronis']","['evacuate gingiva', 'cavity treatment', 'scaling procedure', 'asmef 1x1']"
+10,2023-01-19,kasihanto,Jl Jatijajar 7 B 014/005 Taman Madiun,,,NON MEMBER,karang gigi,P GIGI,,125000.0,0,Dewasa (19-59 thn),40.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+11,2023-01-24,nunung ribut rahayu,Desa Kanung 05/02,,MEMBER,,tambal gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),30.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment', 'kontrol 7 hari lagi']"
+12,2023-01-24,kheri suko setyo,Cidodol 04/06 Grogol Selatan,,,NON MEMBER,kontrol gigi,P GIGI,,45000.0,0,Dewasa (19-59 thn),52.0,L,[],"['amoxicilin 2x1', 'asam mefgenamat 2x1']"
+13,2023-01-24,kuniyem,Desa Rejosari 07/02,,MEMBER,,sakit gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),50.0,P,[],"['levofloxacin 2x1', 'paracetamol 2x1']"
+14,2023-01-27,nn. eksanti,Jumog 10/01 Macanan Jogorogo,,,NON MEMBER,gusi bengkak,P GIGI,,0.0,0,Dewasa (19-59 thn),23.0,P,['gingival abscess'],"['clindamycin (3x1 dosage)', 'piroxicam (2x1 dosage)']"
+15,2023-01-27,roikhan,Ds Kanung 05/02,,MEMBER,,karang gigi,P GIGI,,0.0,1,Dewasa (19-59 thn),32.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+16,2023-01-30,bagas muhammad f,Ds Rejosari 09/02,,,NON MEMBER,kontrol gigi,P GIGI,,45000.0,0,Anak (6-18 thn),8.0,L,['pulpitis reversible'],['scaling procedure']
+17,2023-01-30,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,tambal gigi,P GIGI,,40000.0,0,Anak (6-18 thn),9.0,L,['pulpitis reversible'],['local anesthesia']
+18,2023-01-31,ariya putra,Magetan,,,NON MEMBER,scaling,P GIGI,,0.0,0,Dewasa (19-59 thn),34.0,L,['gingivitis marginalis kronis'],[]
+19,2023-02-01,bela abdi gumelar,Jl Sumber Urip 30/09 Jiwan Madiun,,,NON MEMBER,kontrol gigi,P GIGI,,0.0,0,Dewasa (19-59 thn),30.0,L,[],[]
+20,2023-02-06,sariyam,Rejosari 09/02,,MEMBER,,cabut gigi,GIGI,,0.0,1,Lansia (≥ 60 thn),62.0,P,[],['tooth grinding']
+21,2023-02-06,erni fadlina,Rejosari 12/03,,,NON MEMBER,lainnya,GIGI,,50000.0,0,Anak (6-18 thn),6.0,P,['persistensi'],['exo ce']
+22,2023-02-06,nana okta m.,Sukowidi 14/03 ,,,NON MEMBER,scaling,GIGI,,125000.0,0,Dewasa (19-59 thn),31.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+23,2023-02-08,henie puspito rini,Rejosari 9/2,085334590991,,NON MEMBER,tambal gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),36.0,P,[],"['eug', 'temporary seal', 'kontrol 7 hari lagi']"
+24,2023-02-08,mirza asfa,Desa Kanung 03/02,,,NON MEMBER,cabut gigi,GIGI,,25000.0,0,Anak (6-18 thn),7.0,L,['persistensi'],['exo ce']
+25,2023-02-09,muhammad arrafif shidiq,"Panggung, 3/1, Barat",085730905419,,NON MEMBER,cabut gigi,GIGI,,5000.0,0,Anak (6-18 thn),6.0,L,['persistensi'],"['pro exo', 'dhe', 'konsultasi', 'kontrol 1 bulan lagi']"
+26,2023-02-16,henie puspito rini,Rejosari 9/2,,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),36.0,P,[],"['evacuate gingiva', 'temporary seal']"
+27,2023-02-17,nunung ribut rahayu,Desa Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,,,1,Dewasa (19-59 thn),30.0,P,[],['cavity treatment']
+28,2023-02-22,roikhan,Ds Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),53.0,L,[],"['tooth grinding', 'evacuate gingiva', 'cavity treatment']"
+29,2023-02-24,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,sakit gigi,GIGI,,45000.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment', 'levofloxacin 2x1', 'asmef prn', 'kontrol 7 hari lagi']"
+30,2023-02-27,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),19.0,L,[],['glass ionomer cement']
+31,2023-03-01,henie puspito rini,Desa Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),37.0,P,[],"['evacuate gingiva', 'temporary seal']"
+32,2023-03-01,rhenaldi dwi saputro,Dsn. Dewan 15/04,,,NON MEMBER,scaling,GIGI,,100000.0,0,Dewasa (19-59 thn),21.0,L,['gingivitis marginalis kronis'],['tartar removal']
+33,2023-03-01,indah siti nur azizah,Ds. Kraton 05/01,,,NON MEMBER,kontrol gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),25.0,P,['partial erupted'],"['water spray', 'dhe']"
+34,2023-03-02,rohan,Desa Rejosari RT/RW 09/02,,,NON MEMBER,scaling,GIGI,,150000.0,0,Dewasa (19-59 thn),20.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+35,2023-03-02,indiyah,Dsn. Ngronggo 12/03,,,NON MEMBER,lainnya,GIGI,,10000.0,0,Dewasa (19-59 thn),57.0,P,[],['konsultasi']
+36,2023-03-06,tri kustomo,Ds rejosari 01/01,,,NON MEMBER,gusi bengkak,GIGI,,57000.0,0,Dewasa (19-59 thn),24.0,L,[],"['dhe', 'mp 2x1', 'asmef 1x1', 'diclofenac potasium 2x1', 'clindamycin 3x300']"
+37,2023-03-06,sarinem,Desa rejosari RT/RW 08/02,,,NON MEMBER,lainnya,GIGI,,50000.0,0,Lansia (≥ 60 thn),70.0,P,['myalgia'],"['amlodipine 1x10', 'candesartan 1x1', 'ondancentron 2x1 prn', 'biomega 3x1']"
+38,2023-03-07,henie puspito rini,Desa Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),37.0,P,[],['glass ionomer cement']
+39,2023-03-07,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],['glass ionomer cement']
+40,2023-03-08,sariyun,Desa Rejosari 05/02,,MEMBER,,sakit gigi,GIGI,,0.0,1,Lansia (≥ 60 thn),62.0,L,['gingival abscess'],"['clindamycin (3x1 dosage)', 'asmef 1x1 prn', 'kaditic (2x1 dosage)']"
+41,2023-03-09,henie puspito rini,Desa Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),37.0,P,[],"['local anesthesia', 'kontrol 7 hari lagi']"
+42,2023-03-13,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment', 'kontrol 5 hari lagi']"
+43,2023-03-13,akifa nella g,Ds Rejosari 08/02,,,NON MEMBER,lainnya,GIGI,,70000.0,0,Anak (6-18 thn),6.0,P,['persistensi'],"['exo ce', 'dhe']"
+44,2023-03-13,muhammad arrafif shidiq,"Panggung, 3/1, Barat",,,NON MEMBER,cabut gigi,GIGI,,35000.0,0,Anak (6-18 thn),7.0,L,['persistensi'],"['exo ce', 'dhe']"
+45,2023-03-15,roliyah,Ds. Rejosari 8/2,,,NON MEMBER,lainnya,GIGI,,0.0,0,Dewasa (19-59 thn),50.0,P,[],['konsultasi']
+46,2023-03-17,sringatun,Lingkungan Mangge 01/01 Barat,,,NON MEMBER,cabut gigi,GIGI,,160000.0,0,Dewasa (19-59 thn),35.0,P,[],"['extraksi', 'amoxicillin (3x1 dosage)', 'asmef 1x1']"
+47,2023-03-20,roliyah,Ds. Rejosari 8/2,,,NON MEMBER,karang gigi,GIGI,,122000.0,0,Dewasa (19-59 thn),51.0,P,"['gingivitis marginalis kronis', 'pulpitis irreversible']","['scaling procedure', 'evacuate gingiva', 'cavity treatment', 'kontrol 7 hari lagi', 'asam mefenamat 1x1 prn']"
+48,2023-03-20,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],"['local anesthesia', 'kontrol 5 hari lagi']"
+49,2023-03-21,suwarni,Desa Rejosari 04/01,,,NON MEMBER,gusi bengkak,GIGI,,85000.0,0,Dewasa (19-59 thn),49.0,L,[],"['levofloxacin 2x1', 'asmef 1x1', 'kaditic (2x1 dosage)', 'betadine kumur']"
+50,2023-03-21,nn. diah ayu,"Jln. Bimo, 4/1 , Klegen, Kartoharjo",,,NON MEMBER,gigi berlubang,GIGI,,42000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment', 'asmef 1x1', 'kontrol 7 hari lagi']"
+51,2023-03-21,siti amirul,Rejosari 7/2,,,NON MEMBER,sakit gigi,GIGI,,37000.0,0,Dewasa (19-59 thn),41.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment', 'asmef 1x1', 'kontrol 7 hari lagi']"
+52,2023-03-21,nn siti mardhiyah,Sadang 01/06 Karangtengah Prandon Ngawi,,,NON MEMBER,karang gigi,GIGI,,155000.0,0,Dewasa (19-59 thn),22.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+53,2023-03-24,nabila,Desa Rejosari RT/RW 01/01,,,NON MEMBER,kontrol gigi,GIGI,,157000.0,0,Anak (6-18 thn),10.0,P,"['gingivitis marginalis kronis', 'pulpitis reversible scaling', 'eug', 'cavit']",[]
+54,2023-03-24,aqilla k,Ds Rejosari 06/02,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Balita (1-5 thn),4.0,P,['pulpitis reversible'],"['eug', 'cavity treatment', 'dhe']"
+55,2023-03-27,sukinah,Desa rejosari RT/RW 03/01,,MEMBER,,sakit gigi,GIGI,,0.0,1,Lansia (≥ 60 thn),65.0,P,['gingival abscess'],"['levo 2x1', 'kaditic (2x1 dosage)']"
+56,2023-03-27,roliyah,Ds. Rejosari 8/2,,,NON MEMBER,kontrol gigi,GIGI,,160000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis reversible'],"['evacuate gingiva', 'cavity treatment']"
+57,2023-03-27,nn. diah ayu,"Jln. Bimo, 4/1 , Klegen, Kartoharjo",,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis reversible'],['scaling procedure']
+58,2023-03-29,siti amirul,Rejosari 7/2,81234377794,,NON MEMBER,kontrol gigi,GIGI,,35000.0,0,Dewasa (19-59 thn),41.0,P,['pulpitis reversible'],"['cavity treatment', 'kontrol 7 hari lagi']"
+59,2023-03-30,bela abdi gumelar,Jl Sumber Urip 30/09 Jiwan Madiun,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),30.0,L,['pulpitis reversible'],['local anesthesia']
+60,2023-04-03,roliyah,Ds. Rejosari 8/2,,,NON MEMBER,kontrol gigi,GIGI,,60000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis irreversible'],"['local anesthesia', 'kontrol 7 hari lagi', 'clindamycin 3x300mg', 'kaditic (2x1 dosage)']"
+61,2023-04-03,nn. diah ayu,"Jln. Bimo, 4/1 , Klegen, Kartoharjo",,,NON MEMBER,kontrol gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis irreversible'],"['local anesthesia', 'kontrol 7 hari lagi']"
+62,2023-04-05,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],"['eug', 'cavity treatment']"
+63,2023-04-06,roliyah,Ds. Rejosari 8/2,,,NON MEMBER,kontrol gigi,GIGI,,150000.0,0,Dewasa (19-59 thn),50.0,P,[],"['insersi', 'dhe']"
+64,2023-04-06,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],['gi kontrol 7 hari lagi']
+65,2023-05-31,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),4.0,P,[],['dhe']
+66,2023-06-05,hafid zamrudin,Rejosari 7/2,,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],"['temporary seal', 'kontrol 7 hari lagi']"
+67,2023-06-05,bela abdi gumelar,Jl Sumber Urip 30/09 Jiwan Madiun,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),31.0,L,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment']"
+68,2023-06-06,sariyam,Rejosari 09/02,,MEMBER,,kontrol gigi,UMUM,,0.0,1,Lansia (≥ 60 thn),63.0,P,['dry eyes'],"['amlodipin 1x5mg', 'candesartan 1x8mg', 'insto dry eyes', 'paracetamol prn']"
+69,2023-06-06,hafid zamrudin,Rejosari 7/2,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),20.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+70,2023-06-06,arika,Desa Kanung RT/RW 07/01,,MEMBER,,sakit gigi,GIGI,,0.0,1,Dewasa (19-59 thn),36.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+71,2023-06-06,rizky angga pratama,Ds Kanung 04/01,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Anak (6-18 thn),14.0,L,['gingival abscess'],"['clindamycin (3x1 dosage)', 'diclofenac potassium (2x1 dosage)', 'asmef 1x1']"
+72,2023-06-06,lilis suryani,Kel.Ngegong RT.05/02,,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),55.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'cavity treatment']"
+73,2023-06-06,ilman hajar s n,Bangunsari Dolopo,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),26.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+74,2023-06-06,muhammad ibrahim aminudin,Ds Rejosari 09/02,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Balita (1-5 thn),2.0,L,[],"['betadine kumur', 'aloclair', 'dhe']"
+75,2023-06-09,hafid zamrudin,Rejosari 7/2,83845333352,,NON MEMBER,kontrol gigi,GIGI,,70000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['glass ionomer cement']
+76,2023-06-09,subiantoro,Ds. Pucangrejo 06/03,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),52.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+77,2023-06-12,naufal rafi hamizan,Dsn Ngronggo 11/03,,MEMBER,,sakit gigi,GIGI,,,1,Balita (1-5 thn),3.0,L,[],"['dhe', 'pro gic']"
+78,2023-06-16,trini ambarwati,Desa kanung RT/RW 02/01,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),52.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+79,2023-06-16,abdullatif arrasyid ramaditya,Serua Indah Ciputat Tangerang Selatan,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),3.0,L,['gingivitis'],['polishing']
+80,2023-06-19,srinatun,Desa Kanung 07/02,,MEMBER,,sakit gigi,GIGI,,0.0,1,Dewasa (19-59 thn),45.0,P,['gingival abscess'],"['scaling procedure', 'clindamycin300', 'na diklofenat 50']"
+81,2023-06-21,bela abdi gumelar,Jl Sumber Urip 30/09 Jiwan Madiun,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),31.0,L,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal']"
+82,2023-07-03,daefi septina,Desa rejosari RT/RW 1/1,,MEMBER,,cabut gigi,GIGI,,0.0,1,Anak (6-18 thn),9.0,P,['persistensi'],['exo ce']
+83,2023-07-03,srinatun,Desa Kanung 07/01,,MEMBER,,gusi bengkak,GIGI,,0.0,1,Dewasa (19-59 thn),45.0,P,['gingival abscess'],"['scaling procedure', 'clindamycin 3x300mg', 'diclofenac potassium (2x1 dosage)']"
+84,2023-07-04,nn.shinda rosandi,"Ds.Tambakrejo, Geneng Ngawi RT.04/04",,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),32.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+85,2023-07-04,nn.shinta rosandi,"Ds.Tambakrejo, Geneng Ngawi RT.04/05\4",,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),32.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+86,2023-07-05,edi mohammad s,Desa Kanung 07/01,,MEMBER,,karang gigi,GIGI,,0.0,1,Dewasa (19-59 thn),45.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+87,2023-07-05,lilis suryani,Kel.Ngegong RT.05/02 ,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),55.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+88,2023-07-06,robert ari susanto,Rejosari 13/03,0895370100504,,NON MEMBER,sakit gigi,GIGI,,83000.0,0,Dewasa (19-59 thn),23.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'asmef 1x1', 'diclofenac potassium (2x1 dosage)', 'mp 2x1']"
+89,2023-07-06,muhammad arrafif shidiq,"Panggung, 3/1, Barat",085730905419,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Anak (6-18 thn),7.0,L,['persistensi'],['pro exo']
+90,2023-07-06,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,tambal gigi,GIGI,,5000.0,1,Dewasa (19-59 thn),51.0,P,"['pulpitis reversible', 'pulpitis irreversible']","['evacuate gingiva', 'cavity treatment']"
+91,2023-07-06,siti aliyatul faizah,Pucangrejo 03/02,,,NON MEMBER,cabut gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),47.0,P,[],"['evacuate gingiva', 'local anesthesia']"
+92,2023-07-06,arika ,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,tambal gigi,GIGI,,0.0,1,Dewasa (19-59 thn),36.0,P,"['pulpitis reversible', 'pulpitis irreversible']","['evacuate gingiva', 'temporary seal', 'asmef prn']"
+93,2023-07-10,narmi,Desa Kanung RT/RW 03/01,,MEMBER,,karang gigi,GIGI,,0.0,1,Lansia (≥ 60 thn),62.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+94,2023-07-10,sigit sulistiawan,Desa Jiwan RT/RW 31/09,,,NON MEMBER,scaling,GIGI,,100000.0,0,Dewasa (19-59 thn),25.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+95,2023-07-10,fattan afriansyah a.,Kanung 2/1,,,NON MEMBER,scaling,GIGI,,115000.0,0,Anak (6-18 thn),14.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+96,2023-07-10,fardan afriansyah a.,Kanung 2/1,,,NON MEMBER,scaling,GIGI,,115000.0,0,Anak (6-18 thn),14.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+97,2023-07-11,suwartini,Desa.rejosari RT/RW 06/02,,MEMBER,,gusi bengkak,GIGI,,0.0,1,Dewasa (19-59 thn),54.0,P,['gingival abscess'],"['levofloxacin 2x1', 'nadic 2x1', 'asmef 2x1', 'caviplex 1x1', 'betadine kumur 3x1']"
+98,2023-07-11,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),51.0,P,[],"['tooth grinding', 'glass ionomer cement']"
+99,2023-07-13,sulistyowati,Pule 5/2 Pule Sawahan,085235464826,,NON MEMBER,tambal gigi,GIGI,,37000.0,0,Dewasa (19-59 thn),43.0,P,['pulpitis reversible'],"['asepsis', 'tooth grinding', 'asam mefenamat prn']"
+100,2023-07-13,khimatul musyarofah,Pucang 3/2 Pucangrejo,85806940525,,NON MEMBER,sakit gigi,GIGI,,27000.0,0,Dewasa (19-59 thn),46.0,P,['pulpitis reversible'],"['evacuate gingiva', 'tts', 'paracetamol prn']"
+101,2023-07-14,suwartini,Desa.rejosari RT/RW 06/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),54.0,P,['gangren pulpa'],"['extr pehacain', 'kontrol 7 hari lagi']"
+102,2023-07-14,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,lainnya,GIGI,,0.0,0,Anak (6-18 thn),8.0,L,['persistensi'],"['pro exo', 'dhe', 'kontrol 7 hari lagi']"
+103,2023-07-17,roni kusdianto,Ds Pule 05/02 Sawahan,,,NON MEMBER,cabut gigi,GIGI,,10000.0,0,Dewasa (19-59 thn),41.0,L,['partial edentolosis ridge'],"['pro gtsl', 'ext gr', 'dhe']"
+104,2023-07-17,lilis suryani,Kel.Ngegong RT.05/02 ,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),55.0,P,['pulpitis irreversible'],['oles betadine']
+105,2023-07-17,nunung ribut rahayu,Desa Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),30.0,P,['pulpitis irreversible'],"['tooth grinding', 'evacuate gingiva', 'cavity treatment']"
+106,2023-07-17,mohammad ardianto,Desa rejosari RT/RW 06/02,085859879002,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Anak (6-18 thn),18.0,L,['gingivitis marginalis kronis'],"['pro scaling', 'pro exo']"
+107,2023-07-18,sulistyowati,Pule 5/2 Pule Sawahan,,,NON MEMBER,tambal gigi,GIGI,,60000.0,0,Dewasa (19-59 thn),43.0,P,['pulpitis reversible'],"['asepsis', 't gic']"
+108,2023-07-18,nunung ribut rahayu,Desa Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),30.0,P,['pulpitis irreversible'],"['pro exo', 'asmef 2x1', 'diclofenac potassium (2x1 dosage)', 'clindamycin 3x300mg']"
+109,2023-07-20,rhenaldi dwi saputro,Dsn. Dewan 15/04,,,NON MEMBER,scaling,GIGI,,0.0,0,Dewasa (19-59 thn),21.0,L,['gingivitis marginalis kronis'],"['scaling procedure', 'dhe']"
+110,2023-07-20,muhamad wahid aminudin,Ds. Rejosari 9/2,082120598627,,NON MEMBER,scaling,GIGI,,105000.0,0,Dewasa (19-59 thn),29.0,L,['gingivitis marginalis kronis'],"['scaling procedure', 'dhe']"
+111,2023-07-20,nn. qoniatur rohmah,Ds. Rejosari 7/2,,,NON MEMBER,scaling,GIGI,,125000.0,0,Dewasa (19-59 thn),20.0,P,['gingivitis marginalis kronis'],"['scaling procedure', 'dhe']"
+112,2023-07-20,fardan afriansyah a.,Kanung 2/1,,,NON MEMBER,sakit gigi,GIGI,,50000.0,0,Anak (6-18 thn),14.0,L,['pulpitis reversible'],['t. lc']
+113,2023-07-20,putri maulina,Desa Kanung RT/RW 07/01,,MEMBER,,sakit gigi,GIGI,,0.0,1,Anak (6-18 thn),13.0,P,['stomatitis'],"['gom', 'dhe']"
+114,2023-07-21,khoimatul musyarofah,Pucang 3/2 Pucangrejo,085608961556,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),46.0,P,['pulpitis reversible'],"['chkm', 'temporary seal']"
+115,2023-07-21,muchammad syahreza zuchrufi,"Jl Gulun no 48 RT 31 RW 10 Kejuron, Kota Madiun",081335714239,,NON MEMBER,lainnya,GIGI,,35000.0,0,Anak (6-18 thn),7.0,L,['persistensi'],"['ext ce', 'pro exo']"
+116,2023-07-26,sariyun,Desa Rejosari 07/02,,MEMBER,,sakit gigi,GIGI,,0.0,1,Lansia (≥ 60 thn),62.0,L,['gingival abscess'],"['clindamycin (3x1 dosage)', 'kaditic (2x1 dosage)', 'asmef 2x1', 'pro ext']"
+117,2023-07-26,nunung ribut rahayu,Desa Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),30.0,P,['pulpitis irreversible'],['t gic']
+118,2023-07-27,khoimatul musyarofah,Pucang 3/2 Pucangrejo,,,NON MEMBER,kontrol gigi,GIGI,,60000.0,0,Dewasa (19-59 thn),46.0,P,['pulpitis reversible'],['t gic']
+119,2023-07-27,richo febriyanto,Ds Jatisari Geger Madiun,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),26.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+120,2023-07-28,dhimas imam gozali,"Purworejo 20/02, Geger",085867465261,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),23.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+121,2023-07-28,nn.  in'am fawaida,Lebakayu 8/2 Sawahan,081259610073,,NON MEMBER,gusi bengkak,GIGI,,35000.0,0,Anak (6-18 thn),14.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'mefenamic acid (1x1 dosage)', 'paracetamol 2x1']"
+122,2023-07-31,arika ,Desa Kanung RT/RW 07/01,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),36.0,P,"['pulpitis reversible', 'pulpitis irreversible']","['t gic', 'evacuate gingiva', 'fletcher']"
+123,2023-08-07,arika ,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),36.0,P,['pulpitis irreversible'],['t gic']
+124,2023-08-07,erni fadlina,Rejosari 12/03,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Anak (6-18 thn),7.0,P,[],"['pro exo', 'dhe']"
+125,2023-08-09,ninuk,Ds Wayut 19/05,,,NON MEMBER,kontrol gigi,GIGI,,80000.0,0,Lansia (≥ 60 thn),61.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+126,2023-08-09,i veronica dwi putri d,Jl Patimura gg I / 09 027/006 Sengon Jombang,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Dewasa (19-59 thn),28.0,P,[],['pro bongkar tumpatan']
+127,2023-08-10,kaifiya nuha ramadhani,Ds Rejosari 07/02,85806940525,,NON MEMBER,gigi berlubang,GIGI,,40000.0,0,Balita (1-5 thn),4.0,P,['gingival abscess'],"['amox 3 tab', 'ibuprofen 4 tab', 'pct 3 tab', 'asmef 1 tab', 'mp 2 tab 3x1', 'betadine kumur 3x1']"
+128,2023-08-11,alviona salsabila,Dsn Ngronggo 11/03,,,NON MEMBER,gusi bengkak,GIGI,,22500.0,0,Balita (1-5 thn),2.0,P,[],"['amox 500 mg no iii', 'ibuprofen 400mg no iv', 'pct 500mg no iii', 'mp 4mg no i', 'asmef 500mg no i', '3x1', 'vit c 3x1', 'betadine kumur']"
+129,2023-08-14,srinatun,Desa Kanung 07/01,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),45.0,P,['gingival abscess'],"['amoxicillin (3x1 dosage)', 'diclofenac potassium (2x1 dosage)', 'asmef 2x1']"
+130,2023-08-14,kheyla cantika putri,Dsn Ngronggo 10/03,,,NON MEMBER,lainnya,GIGI,,35000.0,0,Anak (6-18 thn),7.0,P,['persistensi'],['dhe']
+131,2023-08-15,nn masrurotul m,Ds Rejosari 6/2,,MEMBER,,sakit gigi,GIGI,,0.0,1,Anak (6-18 thn),17.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'asmef 2x1', 'betadine kumur 3x1']"
+132,2023-08-18,nn masrurotul m,Ds Rejosari 6/2,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],['evacuate gingiva']
+133,2023-08-21,naufal rafi hamizan,Ngronggo 11/03,,MEMBER,,sakit gigi,GIGI,,0.0,1,Balita (1-5 thn),3.0,L,[],"['amoxicilin 500mg 2 tab', 'ibuprofen 200mg 2', '5 tab', 'pct 500mg 2 tab 3x1']"
+134,2023-08-24,dani iswandari,Desa Rejosari 01/01,,MEMBER,,sakit gigi,GIGI,,0.0,1,Dewasa (19-59 thn),36.0,P,[],"['levofloxacin 2x1', 'nadic 2x1', 'asmef 2x1']"
+135,2023-08-24,naufal rafi hamizan,Ngronggo 11/03,,MEMBER,,sakit gigi,GIGI,,0.0,1,Balita (1-5 thn),3.0,L,[],"['ibuprofen syr 3x1', 'cefadroxil syr 2x1', 'mp 3x1']"
+136,2023-08-28,mohammad yazid ubaidillah,Ds Lebakayu 06/02,81455049394,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Anak (6-18 thn),8.0,L,['persistensi'],"['konsultasi', 'pro ext ce']"
+137,2023-08-28,ririn kristianti,DS. LEBAK AYU 05/02,,,NON MEMBER,gigi berlubang,GIGI,,65000.0,0,Dewasa (19-59 thn),33.0,P,"['pulpitis reversible', 'pulpitis irreversible']","['t.gic', 'evacuate gingiva', 'temporary seal']"
+138,2023-08-28,gean dafine pratama ,DS. LEBAK AYU 05/03,,,NON MEMBER,cabut gigi,GIGI,,40000.0,0,Anak (6-18 thn),8.0,L,['persistensi'],['dhe']
+139,2023-08-28,darielle abian pratama,DS. LEBAK AYU 05/03,,,NON MEMBER,gigi berlubang,GIGI,,0.0,0,Anak (6-18 thn),6.0,L,['pulpitis reversible'],"['dhe', 'erupsi 44']"
+140,2023-08-29,muhammad iqbal firdaus,Pucang 18/02,087774521195,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),22.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+141,2023-08-30,septiana wahyuningsih,Ds Kanung 08/02,081026750830,MEMBER,,karang gigi,GIGI,,0.0,1,Dewasa (19-59 thn),24.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+142,2023-08-31,umi mahmudah,Ds Lebak Ayu 07/02,,,NON MEMBER,cabut gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),43.0,P,[],"['ext topical', 'dhe']"
+143,2023-09-01,muhammad iqbal firdaus,Pucang 18/02,087774521195,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),22.0,L,['pulpitis reversible'],"['t lc', 'polishing']"
+144,2023-09-04,ririn kristianti,DS. LEBAK AYU 05/02,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),33.0,P,['pulpitis irreversible'],['t.gic']
+145,2023-09-04,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,kontrol gigi,GIGI,,0.0,1,Balita (1-5 thn),3.0,L,[],"['water spray', 'alloclair spray', 'mp no 5 3x1']"
+146,2023-09-05,untari,Dsn Dewan 14/04,895631466931,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),30.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+147,2023-09-05,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,kontrol gigi,GIGI,,0.0,1,Balita (1-5 thn),3.0,L,[],"['cefadroxil syr 2x1', 'ibuprofen syr 3x1']"
+148,2023-09-06,suyadi,Ds Rejosari 03/01,81335160627,,NON MEMBER,cabut gigi,GIGI,,32000.0,0,Dewasa (19-59 thn),50.0,L,[],"['ext', 'asmef 2x1']"
+149,2023-09-06,dewi fatmawati,Desa rejosari RT/RW 08/02,,,NON MEMBER,gigi berlubang,GIGI,,28000.0,0,Dewasa (19-59 thn),24.0,P,['pulpitis irreversible'],"['devit', 'temporary seal', 'amox 3x1', 'diclofenac potassium (2x1 dosage)', 'amsef prn']"
+150,2023-09-07,muzayanah,Dsn Ngronggo 11/03,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],"['t ic', 'dhe']"
+151,2023-09-07,ramesha aida putri f,Jln Paus no 3 Madiun,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],['t ic']
+152,2023-09-08,nana okta m.,Sukowidi 14/03 ,085735896627,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),32.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+153,2023-09-08,i innas shofa u,Ciputat Tangerang Selatan,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),26.0,P,"['gingivitis marginalis kronis', 'pulpitis reversible']",['scaling procedure']
+154,2023-09-11,i filly muharani,Ciputat Tangerang Selatan,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),33.0,P,['pulpitis reversible'],"['tooth grinding', 'polishing']"
+155,2023-09-11,i innas shofa u,Ciputat Tangerang Selatan,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),26.0,P,['gangren pulpa'],"['amox 3x1', 'asmef 2x1 prn']"
+156,2023-09-11,fajar sidiq s,Ciputat Tangerang Selatan,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+157,2023-09-11,budi setiadi,Ciputat Tangerang Selatan,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),29.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+158,2023-09-12,mohammad yazid ubaidillah,Ds Lebakayu 06/02,81455049394,,NON MEMBER,sakit gigi,GIGI,,24000.0,0,Anak (6-18 thn),8.0,L,['gingival abscess'],"['cefadroxil syr 2x2 c', 'ibuprofen syr 3x2 c']"
+159,2023-09-12,muzayanah,Dsn Ngronggo 11/03,,MEMBER,,kontrol gigi,GIGI,,0.0,1,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],"['tooth grinding', 't gic']"
+160,2023-09-12,alfatih feriyanto,Ds Rejosari 09/02,085859424858,,NON MEMBER,sakit gigi,GIGI,,20000.0,0,Balita (1-5 thn),5.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal', 'dhe']"
+161,2023-09-13,pramita angga t.,Perum Seloasabri,,,NON MEMBER,karang gigi,GIGI,,130000.0,0,Dewasa (19-59 thn),33.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+162,2023-09-13,fasita imronah,Dusun VII 04/01 Mataramilir Seputih Surabaya,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),27.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+163,2023-09-14,siti khasanah,Desa ngronggo RT/RW 11/03,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),42.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+164,2023-09-15,endang. p,Dsn.Dewan RT/RW 16/04,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],['t gic']
+165,2023-09-15,novia elsi,Desa Rejosari 07/02,,,NON MEMBER,tambal gigi,GIGI,,40000.0,0,Anak (6-18 thn),14.0,P,['pulpitis reversible'],['t lc']
+166,2023-09-19,muzayanah,Dsn Ngronggo 11/03,,MEMBER,,karang gigi,GIGI,0.0,,1,Dewasa (19-59 thn),42.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+167,2023-09-19,alfatih feriyanto,Ds Rejosari 09/02,085859424858,,NON MEMBER,kontrol gigi,GIGI,,10000.0,0,Balita (1-5 thn),5.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal', 'dhe']"
+168,2023-09-19,khoimatul musyarofah,Pucang 3/2 Pucangrejo,085608961556,,NON MEMBER,sakit gigi,GIGI,,23000.0,0,Dewasa (19-59 thn),46.0,P,['pulpitis akut'],"['pct 2x1 prn', 'poviodine 2x1']"
+169,2023-09-21,sunartin,Rejosari RT/RW 05/02,,MEMBER,,gigi berlubang,GIGI,25000.0,,1,Lansia (≥ 60 thn),67.0,P,[],"['evacuate gingiva', 'temporary seal', 'clindamycin 3x300mg', 'diclofenac potasium 2x1', 'asmef prn']"
+170,2023-09-21,nn. eksanti,Jumog 10/01 Macanan Jogorogo,,,NON MEMBER,sakit gigi,GIGI,45000.0,,0,Dewasa (19-59 thn),24.0,P,[],"['clindamycin 3x300mg', 'diclofenac potassium (2x1 dosage)', 'asmef prn', 'betadine kumur']"
+171,2023-09-25,sudarwanti,Desa rejosari RT/RW 04/01,,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),46.0,P,['pulpitis reversible'],['tambal gigi']
+172,2023-09-26,lilis suryani,Kel.Ngegong RT.05/02 ,,,NON MEMBER,kontrol gigi,GIGI,,10000.0,0,Dewasa (19-59 thn),55.0,P,[],['tooth grinding']
+173,2023-09-29,ferena kinara rianti,Kanung 8/1,085967155605,MEMBER,,sakit gigi,GIGI,8000.0,,1,Anak (6-18 thn),9.0,P,['gingival abscess'],['cefadroxil syr 125mg 2x3c']
+174,2023-09-29,ansori,Rejosari 14/04,0895424448799,,NON MEMBER,tambal gigi,GIGI,,35000.0,0,Dewasa (19-59 thn),43.0,L,['pulpitis reversible'],['t gic']
+175,2023-10-02,laminah,Desa Rejosari RT/RW 01/01,,MEMBER,,sakit gigi,GIGI,45000.0,,1,Lansia (≥ 60 thn),70.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'betadine kumur 2x1', 'asmef 2x1prn']"
+176,2023-10-03,tugirah,Desa rejosari RT/RW 07/02,,MEMBER,,sakit gigi,GIGI,25000.0,,1,Lansia (≥ 60 thn),74.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'betadine kumur 2x1', 'asmef 2x1prn']"
+177,2023-10-03,nn.farij muhimmatus,Desa rejosari RT/RW 06/02,,MEMBER,,sakit gigi,GIGI,11000.0,,1,Anak (6-18 thn),17.0,P,[],"['amoxicillin (3x1 dosage)', 'dexa 2x1', 'asmef 2x1 prn']"
+178,2023-10-04,muzayanah,Dsn Ngronggo 11/03,,MEMBER,,cabut gigi,GIGI,0.0,,1,Dewasa (19-59 thn),42.0,P,['pulpitis irreversible'],"['tooth grinding', 't gic']"
+179,2023-10-05,sumadi,Kanung 7/1,,MEMBER,,cabut gigi,GIGI,0.0,,1,Lansia (≥ 60 thn),61.0,L,[],"['ext topical', 'pehacain']"
+180,2023-10-05,yuli rosalia,Sawahan 17/5,,,NON MEMBER,gigi berlubang,GIGI,,30000.0,0,Dewasa (19-59 thn),29.0,P,[],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'betadine kumur 2x1', 'asmef 2x1prn']"
+181,2023-10-06,ninuk sri andarini,Ds Wayut 19/05,,,NON MEMBER,tambal gigi,GIGI,,26000.0,0,Lansia (≥ 60 thn),61.0,P,[],"['evacuate gingiva', 'cavity treatment', 'amox 3x1', 'dexa 2x1', 'asmef 2x1']"
+182,2023-10-06,tugirah,Desa rejosari RT/RW 07/02,,MEMBER,,sakit gigi,GIGI,25000.0,,1,Lansia (≥ 60 thn),74.0,P,[],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 2x1prn']"
+183,2023-10-09,lilik sutarmi,Desa Rejosari 07/02,,MEMBER,,sakit gigi,GIGI,15000.0,,1,Lansia (≥ 60 thn),66.0,P,['periodentitis agresif'],"['mp 2x1', 'pct 2x1', 'vit d 1x1']"
+184,2023-10-10,nn alvina masruroh,Ds Rejosari 10/03,81993696058,,NON MEMBER,gigi berlubang,GIGI,,18000.0,0,Anak (6-18 thn),16.0,P,['pulpitis reversible'],['asmef prn']
+185,2023-10-11,muzayanah,Dsn Ngronggo 11/03,,MEMBER,,tambal gigi,GIGI,2000.0,,1,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],"['t lc', 'tooth grinding']"
+186,2023-10-13,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,gigi berlubang,GIGI,,45000.0,0,Anak (6-18 thn),6.0,P,"['perikoronitis', 'pulpitis reversible']","['sanmol syr prn 15ml', 'evacuate gingiva', 'temporary seal', 'dhe']"
+187,2023-10-13,ninuk sri andarini,Ds Wayut 19/05,,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Lansia (≥ 60 thn),61.0,P,['pulpitis irreversible'],"['dinding buatan l.c', 'evacuate gingiva', 'fletcher', 'dexa 2x1 prn', 'asmef prn']"
+188,2023-10-13,srinatun,Desa Kanung 07/01,,MEMBER,,sakit gigi,GIGI,48000.0,,1,Dewasa (19-59 thn),45.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 2x1', 'betadine kumur 2x1']"
+189,2023-10-16,laminah,Desa Rejosari RT/RW 01/01,,MEMBER,,lainnya,GIGI,0.0,,1,Lansia (≥ 60 thn),70.0,P,[],"['pro lepas gt', 'dhe']"
+190,2023-10-17,suyadi,Ds Rejosari 03/01,81335160627,,NON MEMBER,lainnya,GIGI,,15000.0,0,Dewasa (19-59 thn),50.0,L,[],['ext']
+191,2023-10-18,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,['pulpitis irreversible'],['dhe']
+192,2023-10-20,nn alvina masruroh,Ds Rejosari 10/03,81993696058,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Anak (6-18 thn),16.0,P,['pulpitis reversible'],"['t gic', 'pro scaling']"
+193,2023-10-20,hanafi adnan nurkharim,Ds. Rejosari 09/02,,,NON MEMBER,cabut gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),27.0,L,['impaksi'],['cabut gigi']
+194,2023-10-23,lilik sutarmi,Desa Rejosari 07/02,,MEMBER,,lainnya,GIGI,14000.0,,1,Lansia (≥ 60 thn),66.0,P,['glositis'],"['mp 2x1', 'caviplex 1x1', 'gom 3x1']"
+195,2023-10-26,fayyasyi uzza,Desa Rejosari 03/01,85648516876,,NON MEMBER,sakit gigi,GIGI,,25000.0,0,Anak (6-18 thn),7.0,P,['gingival abscess'],"['dhe', 'cefadroxil syr 2x1/2 cth', 'ibuprofen syr 3x1 cth']"
+196,2023-10-31,srinatun,Desa Kanung 07/01,,MEMBER,,kontrol gigi,GIGI,,61000.0,1,Dewasa (19-59 thn),45.0,P,['gingival abscess'],"['dhe', 'kontrol dm']"
+197,2023-10-31,ninuk sri andarini,Ds Wayut 19/05,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Lansia (≥ 60 thn),61.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'asmef prn']"
+198,2023-10-31,hanifa cahya wardati,Rejosari 9/2,,,NON MEMBER,karang gigi,GIGI,74000.0,,0,Dewasa (19-59 thn),28.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+199,2023-11-01,afzahra fentiara,Kepel 04/01 Banjarsari Madiun,89644130844,,NON MEMBER,karang gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),28.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+200,2023-11-06,ali busro,Sukowidi 18/03 Nguntoronadi Magetan,81259240002,,NON MEMBER,sakit gigi,GIGI,0.0,,0,Dewasa (19-59 thn),33.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'asmef prn', 'kaditic (2x1 dosage)', 'betadine kumur']"
+201,2023-11-07,yusuf aziz pripratama,Bajang 07/02 Banjarsari Madiun,81231847682,,NON MEMBER,tambal gigi,GIGI,6000.0,,0,Dewasa (19-59 thn),22.0,L,"['gingivitis marginalis kronis', 'pulpitis reversible']","['scaling procedure', 'evacuate gingiva', 'temporary seal', 'asmef prn']"
+202,2023-11-08,sukadi,Rejosari RT/RW 5/2,,MEMBER,,lainnya,GIGI,9000.0,,1,Dewasa (19-59 thn),57.0,L,[],"['pro ro splingting', 'dhe']"
+203,2023-11-20,ninuk sri andarini,Ds Wayut 19/05,,,NON MEMBER,kontrol gigi,GIGI,,,0,Lansia (≥ 60 thn),61.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal']"
+204,2023-11-20,azzahra talita putri kirana,Krokeh 06/02 Sawahan,85646426589,,NON MEMBER,cabut gigi,GIGI,13500.0,,0,Anak (6-18 thn),8.0,P,['persistensi'],"['ext ce', 'dhe']"
+205,2023-11-20,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,gusi bengkak,GIGI,11000.0,,1,Balita (1-5 thn),3.0,P,['gingival abscess'],"['cefadroxil syr 2x1', 'ibuprofen syr 2x1']"
+206,2023-11-23,fayyasyi uzza,Desa Rejosari 03/01,85648516876,,NON MEMBER,kontrol gigi,GIGI,9500.0,,0,Anak (6-18 thn),7.0,P,[],['konsultasi']
+207,2023-11-27,arika melania,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,sakit gigi,GIGI,14000.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis irreversible'],"['amox 3x1', 'kaditic (2x1 dosage)', 'asmef prn']"
+208,2023-11-28,margono,"Purworejo 20/02, Geger",,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),55.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+209,2023-11-30,bela abdi gumelar,Jl Sumber Urip 30/09 Jiwan Madiun,81332330501,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),30.0,L,['pulpitis irreversible'],"['devit', 'temporary seal']"
+210,2023-12-01,selfyana syafitrie,Ds Kanung 01/02,85736045860,MEMBER,,kontrol gigi,GIGI,6000.0,,1,Anak (6-18 thn),7.0,P,['persistensi'],"['ext', 'ibuprofen syr']"
+211,2023-12-04,aretha azwa humaira,Ngronggo RT 10/03,85790986156,,NON MEMBER,lainnya,GIGI,,0.0,0,Anak (6-18 thn),6.0,P,['persistensi'],"['dhe', 'evaluasi']"
+212,2023-12-04,pariyem,Ngronggo 10/3,085853460258,,NON MEMBER,gigi berlubang,GIGI,,35000.0,0,Dewasa (19-59 thn),49.0,P,['pulpitis irreversible'],"['clinamycin 3x1', 'kaditic (2x1 dosage)', 'asmef prn']"
+213,2023-12-12,ninuk sri andarini,Ds Wayut 19/05,87858186612,,NON MEMBER,kontrol gigi,GIGI,,50000.0,0,Lansia (≥ 60 thn),61.0,P,['pulpitis irreversible'],['local anesthesia']
+214,2023-12-12,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,sakit gigi,GIGI,15000.0,,1,Balita (1-5 thn),3.0,L,['pulpitis irreversible'],"['asepsis', 'cefadroxil syr 2x1', 'ibuprofen syr 3x1', 'vit c 1x1']"
+215,2023-12-18,darelle,LEBAK AYU RT 15/5,082245065464,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Balita (1-5 thn),6.0,L,['persistensi'],['cabut gigi']
+216,2023-12-18,zunatun,LEBAK AYU 06/02,,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),44.0,P,['pulpitis reversible'],['t lc']
+217,2023-12-18,aretha azwa humaira,Ngronggo RT 10/03,,,NON MEMBER,cabut gigi,GIGI,,80000.0,0,Anak (6-18 thn),6.0,P,['persistensi'],['pro ext']
+218,2023-12-18,kheysa cantika putri,Dsn. NGRONGGO RT 10/3,085735493325,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Anak (6-18 thn),8.0,P,['persistensi'],['pro ext']
+219,2023-12-21,robert ari susanto,Rejosari 13/03,0895370100504,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),23.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+220,2023-12-22,indra setiawan,Banjar I 006/001 Padas Ngawi,85799376962,,NON MEMBER,karang gigi,GIGI,,80000.0,0,Dewasa (19-59 thn),23.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+221,2023-12-28,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,gigi berlubang,GIGI,,65000.0,0,Anak (6-18 thn),6.0,P,['pulpitis reversible'],['t lc']
+222,2023-12-28,siti juwariyah,Ds Rejosari 11/03,85708398372,,NON MEMBER,cabut gigi,GIGI,,37000.0,0,Dewasa (19-59 thn),48.0,P,[],"['ext', 'amox 3x1', 'asmef prn']"
+223,2023-12-28,nn mir'atun niswah,Dsn Ngronggo 10/03,,,NON MEMBER,gigi berlubang,GIGI,,25000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal', 'pro scaling']"
+224,2023-12-29,eko arianto,Ds Kanung 03/02,8989156122,,NON MEMBER,sakit gigi,GIGI,,47000.0,0,Dewasa (19-59 thn),44.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn']"
+225,2024-01-02,nn.diva nadiya sudarsono,Desa Rejosari RT/RW 04/01,85608956100,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis irreversible'],['t lc']
+226,2024-01-02,srinatun,Desa Kanung 07/01,,MEMBER,,gusi bengkak,GIGI,46000.0,,1,Dewasa (19-59 thn),45.0,P,"['gingivitis marginalis kronis', 'gingival abscess']","['clindamycin (3x1 dosage)', 'na dic 2x1', 'asmef 2x1', 'betadin kumur 3x1']"
+227,2024-01-03,siti mu'ayanah,Ds Purworejo 20/02 Geger Madiun,82301109858,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),50.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+228,2024-01-03,muhammad fajar mu'afi tamimul akhsin,Ds Purworejo 20/02 Geger Madiun,82301109858,,NON MEMBER,karang gigi,GIGI,,151000.0,0,Dewasa (19-59 thn),22.0,L,['gingivitis marginalis kronis'],"['scaling procedure', 'clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 2x1', 'betadine kumur']"
+229,2024-01-03,nn mir'atun niswah,Dsn Ngronggo 10/03,895809506688,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+230,2024-01-04,elvivana maisaroh,Ds Pucangrejo 13/06,81359274517,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),41.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+231,2024-01-05,eko arianto,Ds Kanung 03/02,8989156122,,NON MEMBER,sakit gigi,GIGI,,67000.0,0,Dewasa (19-59 thn),44.0,L,['gingival abscess'],"['levofloxacin 2x1', 'na diclofenac 2x1pct 2x1', 'betadin kumur 2x1']"
+232,2024-01-05,nn mir'atun niswah,Dsn Ngronggo 10/03,895809506688,,NON MEMBER,sakit gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis reversible'],['t gic']
+233,2024-01-05,benny wijaya,Desa.Glonggong Dolopo Madiiun RT/RW 12/01,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Dewasa (19-59 thn),29.0,L,"['gingival abscess', 'pulpitis reversible']","['asepsis', 'evacuate gingiva', 'temporary seal']"
+234,2024-01-08,dimas eka saputra,Ds Nambangan Lor 12/04,,,NON MEMBER,gigi berlubang,GIGI,,50000.0,0,Dewasa (19-59 thn),20.0,L,['gingival abscess'],"['asmef prn', 'betadine kumur 2x1']"
+235,2024-01-08,kheysa cantika putri,Dsn. NGRONGGO RT 10/3,85735493325,,NON MEMBER,kontrol gigi,GIGI,,15000.0,0,Anak (6-18 thn),8.0,P,[],"['pro ext', 'cefadroxil syr 2x1', 'ibuprofen syr 3x1']"
+236,2024-01-10,muhammad fajar mu'afi tamimul akhsin,Ds Purworejo 20/02 Geger Madiun,82301109858,,NON MEMBER,kontrol gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),22.0,L,['pulpitis reversible'],['t. lc']
+237,2024-01-15,selfyana syafitrie,Ds Kanung 01/02,85736045860,MEMBER,,sakit gigi,GIGI,14000.0,,1,Anak (6-18 thn),7.0,P,['abses gingiva e.c periodentitis kronis'],"['cefadroxil 2x1', 'ibuprofen 3x1']"
+238,2024-01-17,yuyun,Desa rejosari RT/RW 04/01,,,NON MEMBER,sakit gigi,GIGI,,10000.0,0,Dewasa (19-59 thn),45.0,P,[],"['pro ext', 'clindamycin (3x1 dosage)', 'piroxicam (2x1 dosage)', 'asmef 2x1', 'amlodipin 1x5mg']"
+239,2024-01-19,yuyun,Desa rejosari RT/RW 04/01,,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),43.0,P,[],['ext']
+240,2024-01-19,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal', 'dhe']"
+241,2024-01-19,benny wijaya,Desa.Glonggong Dolopo Madiiun RT/RW 12/01,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),29.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+242,2024-01-22,pariyem,Ngronggo 10/3,85853460258,,NON MEMBER,sakit gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),49.0,P,['pulpitis irreversible'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn']"
+243,2024-01-24,dony saputra,Ds Klorogan 01/01 Geger,,,NON MEMBER,tambal gigi,GIGI,,46000.0,0,Dewasa (19-59 thn),32.0,L,['pulpitis reversible'],['t gic']
+244,2024-01-25,dhani firmansyah,Ngronggo 11/3,081528922131,,NON MEMBER,tambal gigi,GIGI,,17000.0,0,Dewasa (19-59 thn),24.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal', 'asmef prn']"
+245,2024-01-25,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,P,['pulpitis irreversible'],['t.lc']
+246,2024-02-02,dhani firmansyah,Ngronggo 11/3,081528922131,,NON MEMBER,gigi berlubang,GIGI,,30000.0,0,Dewasa (19-59 thn),24.0,L,['pulpitis irreversible'],['t.lc']
+247,2024-02-05,hafidz ramadhan,Desa rejosari RT/RW 05/02,,MEMBER,,kontrol gigi,GIGI,0.0,,1,Anak (6-18 thn),6.0,L,[],['pro ext']
+248,2024-02-05,cassandra aldaria anastasya,Desa Kanung 05/02,,MEMBER,,kontrol gigi,GIGI,0.0,,1,Anak (6-18 thn),8.0,P,['pulpitis reversible'],"['dhe', 'konsultasi']"
+249,2024-02-12,arika melania,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,kontrol gigi,GIGI,28000.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis reversible'],"['asmef prn', 'betadie kumur']"
+250,2024-02-12,janu fajar alamsyah,Ds Rejosari 06/02,,,NON MEMBER,gigi berlubang,GIGI,,45000.0,0,Anak (6-18 thn),15.0,L,['gingival abscess'],"['evg ts', 'clindamycin (3x1 dosage)', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur']"
+251,2024-02-13,fendy setya nur,Ds Kanung 003/001,0895367252092,,NON MEMBER,tambal gigi,GIGI,0.0,,0,Dewasa (19-59 thn),36.0,P,['pulpitis reversible'],"['dhe', 'pro scaling']"
+252,2024-02-13,febi triaprimandika,Ds. Karangmojo 15/04,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),25.0,L,['48 impacted'],['pro rujuk ro 48']
+253,2024-02-15,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,tambal gigi,GIGI,,35000.0,0,Dewasa (19-59 thn),48.0,L,['pulpitis reversible'],['t gic']
+254,2024-02-16,nn.nur zahrotul jannah,Ds. Cabean 11/03,081230087139,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),22.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+255,2024-02-16,dian kristianingrum,"Jln. Pringgodani No.36, Taman",85765382828,,NON MEMBER,cabut gigi,GIGI,,45000.0,0,Dewasa (19-59 thn),38.0,P,[],['ext ce']
+256,2024-02-19,selfyana syafitrie,Ds Kanung 01/02,85736045860,MEMBER,,sakit gigi,GIGI,16000.0,,1,Anak (6-18 thn),7.0,P,['gingival abscess'],"['cefadroxil 2x1', 'ibuprofen 3x1', 'medikasi']"
+257,2024-02-19,febi triaprimandika,Ds. Karangmojo 15/04,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),25.0,L,['48 impacted'],['pro ekstraksi']
+258,2024-02-19,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,kontrol gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),31.0,L,['gingivitis'],['scaling procedure']
+259,2024-02-22,srinatun,Desa Kanung 07/01,,MEMBER,,cabut gigi,GIGI,,0.0,1,Dewasa (19-59 thn),45.0,P,[],"['kaditic (2x1 dosage)', 'asmef prn']"
+260,2024-02-23,nn atik rosidah,Ds Rejosari 6/2,08563044402,,NON MEMBER,,GIGI,,82000.0,0,Dewasa (19-59 thn),28.0,P,[],[]
+261,2024-02-28,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),48.0,L,['pulpitis reversible'],['t gic']
+262,2024-02-28,siti sarofah,Dsn Ngronggo 12/03,85100745631,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),48.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+263,2024-03-04,faisal arhab,Jl. Dite Manis I/04 RT 43 RW 11 Manisrejo Taman Kota Madiun,,,NON MEMBER,tambal gigi,GIGI,,45000.0,0,Anak (6-18 thn),14.0,L,[],['t. lc komposit']
+264,2024-03-05,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,gigi berlubang,GIGI,,10000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['t gic']
+265,2024-03-05,sandy aziz setia nugroho,Ds Rejosari 13/3,89649532099,,NON MEMBER,gigi berlubang,GIGI,,55000.0,0,Dewasa (19-59 thn),28.0,L,[],"['asepsis', 'medikasi', 'clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 2x1', 'betadine kumur']"
+266,2024-03-05,yuli rosalina,Sawahan 17/5,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),29.0,P,[],['penundaan']
+267,2024-03-05,arika melania,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,sakit gigi,GIGI,6000.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis reversible'],['asmef prn']
+268,2024-03-06,nn dina aulia sari,Mojomanis 03/01 Kwadungan Ngawi,82228045995,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),19.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+269,2024-03-06,arika melania,Desa Kanung RT/RW 07/01,083806136705,MEMBER,,sakit gigi,GIGI,0.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis irreversible'],['t lc']
+270,2024-03-06,yuli rosalina,Sawahan 17/5,,,NON MEMBER,kontrol gigi,GIGI,,44000.0,0,Dewasa (19-59 thn),29.0,P,['gingival abscess'],"['medikasi', 'clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur']"
+271,2024-03-06,yainem,Desa Rejosari RT/RW 03/01,,MEMBER,,gusi bengkak,GIGI,8000.0,,1,Dewasa (19-59 thn),52.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn']"
+272,2024-03-13,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,cabut gigi,GIGI,,5000.0,0,Dewasa (19-59 thn),20.0,L,[],['grinding ig']
+273,2024-03-14,muhammad al-fatih feriyanto,Ds Rejosari 09/02,085859424858,,NON MEMBER,lainnya,GIGI,,20000.0,0,Anak (6-18 thn),6.0,L,[],['ext ce']
+274,2024-03-21,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,sakit gigi,GIGI,,5000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['kontrol 7 hari lagi']
+275,2024-03-21,siti mu'ayanah,Ds Purworejo 20/02 Geger Madiun,082301109858,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),50.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+276,2024-03-26,muhammad al-fatih feriyanto,Ds Rejosari 09/02,085859424858,,NON MEMBER,lainnya,GIGI,,,0,Anak (6-18 thn),6.0,L,[],['dhe']
+277,2024-03-26,srinatun,Desa Kanung 07/01,,MEMBER,,sakit gigi,GIGI,45000.0,,1,Dewasa (19-59 thn),46.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'pct 2x1', 'betadine kumur 2x1']"
+278,2024-03-27,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,P,['persistensi'],['ext ce']
+279,2024-03-27,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],"['sterilisasi', 'evg ts']"
+280,2024-03-28,siti mu'ayanah,Ds Purworejo 20/02 Geger Madiun,082301109858,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),50.0,P,['pulpitis reversible'],['t. lc']
+281,2024-04-01,dewi fatmawati,Desa rejosari RT/RW 08/02,,,NON MEMBER,sakit gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),25.0,P,['pulpitis reversible'],['t lc']
+282,2024-04-01,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['pro ko']
+283,2024-02-04,dul salam,Desa Rejosari 11/03,,,NON MEMEBR,gusi bengkak,GIGI,,56000.0,,Lansia (≥ 60 thn),71.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur 2x1']"
+284,2024-04-03,reny faristin putri arifin,Nambangan Kidul 13/04,,,NON MEMEBR,scaling,GIGI,,0.0,,Dewasa (19-59 thn),30.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+285,,nuzulul anggi rizki,Sitiluhur 02/06,,,NON MEMEBR,scaling,GIGI,,209370.0,,Dewasa (19-59 thn),26.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+286,2024-04-04,archie fernandi,Jl.Sadewa IV No.13 03/09 Kutoharjo,,,NON MEMEBR,scaling,GIGI,,,,Dewasa (19-59 thn),28.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+287,2024-04-04,amrina ,Desa Rejosari 01/01,,,NON MEMEBR,cabut gigi,GIGI,,30000.0,,Anak (6-18 thn),8.0,P,[],['ext ce']
+288,2024-04-05,maudy nala jasmine alfirdausy,Jl. Ciliwung IV No.24-B,,,NON MEMEBR,sakit gigi,GIGI,,35000.0,,Balita (1-5 thn),4.0,P,['pulpitis reversible'],['t gic']
+289,2024-04-17,hafya  areta aziz,Jatasari 22/05,,,NON MEMEBR,karang gigi,GIGI,,105000.0,,Anak (6-18 thn),13.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+290,2024-04-17,nn. atik kurniawati,Desa Rejosari 02/01,81456025928,,NON MEMEBR,kontrol gigi,GIGI,,28000.0,,Anak (6-18 thn),17.0,P,['pulpitis reversible'],['temporary seal']
+291,2024-04-18,nn. atik kurniawati,Desa Rejosari 02/01,81456025928,,NON MEMEBR,sakit gigi,GIGI,,5000.0,,Anak (6-18 thn),17.0,P,['pulpitis reversible'],"['preparasi', 'evacuate gingiva']"
+292,2024-04-18,supiyatun,Desa rejosari RT/RW 07/02,,MEMBER,,kontrol gigi,GIGI,0.0,,1,Dewasa (19-59 thn),51.0,P,['gangren radix 23'],['pro ext']
+293,2024-04-18,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,cabut gigi,GIGI,,20000.0,0,Anak (6-18 thn),7.0,P,['persistensi'],['ext ce']
+294,2024-04-19,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,kontrol gigi,GIGI,,26500.0,0,Dewasa (19-59 thn),32.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+295,2024-04-24,nn.diva nadiya sudarsono,Desa Rejosari RT/RW 04/01,85608956100,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),20.0,P,['pulpitis reversible'],['t l c']
+296,2024-04-24,fattan afriansyah a.,Kanung 2/1,,,NON MEMBER,karang gigi,GIGI,,110000.0,0,Anak (6-18 thn),15.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+297,2024-04-24,fardan afriansyah a.,Kanung 2/1,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Anak (6-18 thn),15.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+298,2024-04-24,trini ambarwati,Desa kanung RT/RW 02/01,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),53.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+299,2024-04-24,srinatun,Desa Kanung 07/01,,MEMBER,,sakit gigi,GIGI,15000.0,,1,Dewasa (19-59 thn),46.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'pct 2x1']"
+300,2024-04-26,fardan afriansyah a.,Kanung 2/1,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Anak (6-18 thn),15.0,L,['pulpitis reversible'],"['evacuate gingiva', 'cavity treatment']"
+301,2024-04-26,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,kontrol gigi,GIGI,,31000.0,0,Dewasa (19-59 thn),32.0,L,['pulpitis reversible'],['t gic']
+302,2024-04-29,samsiati,Dsn Ngronggo 12/03,,,NON MEMBER,sakit gigi,GIGI,,45000.0,0,Lansia (≥ 60 thn),61.0,P,[],['ext']
+303,2024-04-29,septyan ilham pratama,Pojok II 03/02 Pojok Kwadungan Ngawi,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),19.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+304,2024-04-29,nn dina aulia sari,Mojomanis 03/01 Kwadungan Ngawi,82228045995,,NON MEMBER,sakit gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis reversible'],['t lc']
+305,2024-04-30,dian kristianingrum,"Jln. Pringgodani No.36, Taman",085765382828,,NON MEMBER,gigi berlubang,GIGI,,,0,Dewasa (19-59 thn),38.0,P,['pulpitis reversible'],['pembersihan kavitas']
+306,2024-05-02,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,sakit gigi,GIGI,15500.0,,1,Balita (1-5 thn),4.0,L,['pulpitis irreversible'],"['ibuprofen syr 3x125mg', 'cefadroxil syr 2x125mg']"
+307,2024-05-03,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,sakit gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),48.0,L,['pulpitis reversible'],['t gic']
+308,2024-05-03,sumari,Desa Rejosari 05/02,,,NON MEMBER,sakit gigi,GIGI,,26000.0,0,Lansia (≥ 60 thn),64.0,L,[],['asmef prn']
+309,2024-05-06,naufal rafi hamizan,Ngronggo 11/03,85815960752,MEMBER,,sakit gigi,GIGI,7800.0,,1,Balita (1-5 thn),4.0,L,['gingival abscess'],"['medikasi', 'ibuprofen syr 3x1 cth', 'vit c 1x1']"
+310,2024-05-08,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),48.0,L,['pulpitis reversible'],['t lc']
+311,2024-05-16,pristowo ariya putra,GG.MASJID IV NO.125 ,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),33.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+312,2024-05-16,annisa aireka,JL.ARIA PUTRA GG H BETONG,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),24.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+313,2024-05-16,hanifa lathifa salsabila,Dsn Ngronggo 12/03,,,NON MEMBER,tambal gigi,GIGI,,55000.0,0,Anak (6-18 thn),14.0,P,['pulpitis reversible'],['t gic']
+314,2024-05-20,faeyza aurelia,Jl. Kemuning No. 18 Madiun,081259252362,,NON MEMBER,sakit gigi,GIGI,,25000.0,0,Anak (6-18 thn),11.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+315,2024-05-22,aisyah aprilia rafifah,Desa Sawahan,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,P,['pulpitis reversible'],['konsultasi']
+316,2024-05-22,afshin masruhah,Desa Sawahan,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),4.0,P,['pulpitis reversible'],['konsultasi']
+317,2024-05-22,cantika zhea renata putri,Desa Cabean,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],['konsultasi']
+318,2024-05-22,gian rainindra athaya,Desa Lebak Ayu,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,L,['pulpitis reversible'],['konsultasi']
+319,2024-05-22,mohammad nabil al fahrezi,Cabean,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Balita (1-5 thn),4.0,L,['pulpitis reversible'],['konsultasi']
+320,2024-05-22,dian sukmawati,Desa Kanung 01 /01,,MEMBER,,karang gigi,GIGI,100000.0,,1,Dewasa (19-59 thn),36.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+321,2024-05-24,erin widyawati,Jl.Diponegoro No.96 ,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),23.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+322,2024-05-28,bisri,Desa Rejosari 13/03,89502602700,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),55.0,L,[],['scaling procedure']
+323,2024-05-28,siti aliyatul faizah,Pucangrejo 03/02,,,NON MEMBER,tambal gigi,GIGI,,55000.0,0,Dewasa (19-59 thn),47.0,P,['pulpitis reversible'],"['jaga oh', 'kurangi makan minum asam']"
+324,2024-05-28,faeyza aurelia,Jl. Kemuning No. 18 Madiun,081259252362,,NON MEMBER,kontrol gigi,GIGI,,35000.0,0,Anak (6-18 thn),11.0,P,['pulpitis reversible'],['t lc']
+325,2024-05-29,siti aliyatul faizah,Pucangrejo 03/02,85736813758,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),47.0,P,[],['t gic']
+326,2024-05-29,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,sakit gigi,GIGI,,25000.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],['temporary seal']
+327,2024-05-30,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],['temporary seal']
+328,2024-05-30,siti aliyatul faizah,Pucangrejo 03/02,85736813758,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),47.0,P,['pulpitis reversible'],['t gic']
+329,2024-06-03,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,lainnya,GIGI,,20000.0,0,Anak (6-18 thn),7.0,P,[],['ext ce']
+330,2024-06-03,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Balita (1-5 thn),5.0,P,[],['ext ce']
+331,2024-06-04,muhamad wahid aminudin,Ds. Rejosari 9/2,082120598627,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),29.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+332,2024-06-05,endang purwaningsih,Dsn.Dewan RT/RW 16/04,,,NON MEMBER,gigi berlubang,GIGI,,30000.0,0,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],['t gic']
+333,2024-06-05,untari,Dsn Dewan 14/04,0895631466931,,NON MEMBER,cabut gigi,GIGI,,36000.0,0,Dewasa (19-59 thn),41.0,P,[],['asmef prn']
+334,2024-06-06,endang purwaningsih,Dsn.Dewan RT/RW 16/04,,,NON MEMBER,gigi berlubang,GIGI,,0.0,0,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],['t gic']
+335,2024-06-06,muhammad al-fatih feriyanto,Ds Rejosari 09/02,085859424858,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),6.0,L,[],['ext ce']
+336,2024-06-06,fatah,"Desa Rejosari, RT/RW 09/02",,MEMBER,,sakit gigi,GIGI,33500.0,,1,Dewasa (19-59 thn),58.0,L,[],"['scaling procedure', 'asmef prn', 'betadine kumur 2x1']"
+337,2024-06-10,siti mu'ayanah,Ds Purworejo 20/02 Geger Madiun,082301109858,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),50.0,P,['pulpitis reversible'],['t gic']
+338,2024-06-11,siti mu'ayanah,Ds Purworejo 20/02 Geger Madiun,082301109858,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),50.0,P,['pulpitis reversible'],['t gic']
+339,2024-06-13,charadiva laksita ken nafilah,Jl. Salak Timur X 37/12,81459126155,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),22.0,P,['pulpitis reversible'],['t lc']
+340,2024-06-20,septiani eka budiarti,SAMBIREJO 18/07,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),32.0,P,[],['scaling procedure']
+341,2024-06-24,ninik sunarni,Ds Kanung 02/02,085784479468,MEMBER,,sakit gigi,GIGI,59000.0,,1,Dewasa (19-59 thn),47.0,P,['gingival abscess'],"['clindamycin (3x1 dosage)', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur']"
+342,2024-06-24,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,gigi berlubang,GIGI,33500.0,,1,Dewasa (19-59 thn),51.0,P,[],"['ibuprofen 2x1', 'betadine kumur']"
+343,2024-06-24,muhammad yazid ubaidillah,Desa Lebakayu 06/02,,,NON MEMBER,gusi bengkak,GIGI,,51500.0,0,Anak (6-18 thn),8.0,L,[],"['cefadroxil syr 2x2', '5 cth', 'ibuprofen 3x1 cth', 'betadine kumur 2x1']"
+344,2024-06-24,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),7.0,P,['persistensi'],['ext ce']
+345,2024-06-25,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,gigi berlubang,GIGI,,26000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal', 'asmef prn']"
+346,2024-06-26,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),20.0,L,"['gingivitis marginalis kronis', 'pulpitis reversible']",['scaling procedure']
+347,2024-06-26,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,gigi berlubang,GIGI,,50000.0,0,Dewasa (19-59 thn),31.0,L,['pulpitis reversible'],['t lc']
+348,2024-06-27,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,gigi berlubang,GIGI,,50000.0,0,Dewasa (19-59 thn),31.0,L,['pulpitis reversible'],['t lc']
+349,2024-06-28,clareadi kuncahyo jati,Jl.Ahmad Yani Gg. Trubus 5 11/04,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),21.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+350,2024-07-01,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,gigi berlubang,GIGI,30000.0,,1,Dewasa (19-59 thn),51.0,P,[],"['evacuate gingiva', 'cavity treatment']"
+351,2024-07-01,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis irreversible'],['t lc']
+352,2024-07-01,azizah rizqi budi,Jl. KENDALISODO 04/02,89603058199,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),19.0,P,['pulpitis irreversible'],['t lc']
+353,2024-07-02,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis irreversible'],['asepsis']
+354,2024-07-02,lilis suryani,Kel.Ngegong RT.05/02 ,,,NON MEMBER,lainnya,GIGI,,0.0,0,Dewasa (19-59 thn),55.0,P,[],['tooth grinding']
+355,2024-07-02,ana maya wahyu murni,"Jl. Gembili, No. 3, RT/RW. 15/5, Ngegong",081252829994,,NON MEMBER,gigi berlubang,GIGI,,79000.0,0,Dewasa (19-59 thn),43.0,P,['gingival abscess'],"['asepsis', 'clindamycin (3x1 dosage)', 'kaditic (2x1 dosage)', 'betadine kumur 2x1']"
+356,2024-07-02,nn.shinda rosandi,"Ds.Tambakrejo, Geneng Ngawi RT.04/04",,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),32.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+357,2024-07-03,nn.shinta rosandi,"Ds.Tambakrejo, Geneng Ngawi RT.04/05\4",,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),32.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+358,2024-07-03,lilis suryani,Kel.Ngegong RT.05/02 ,,,NON MEMBER,karang gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),55.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+359,2024-07-03,dwiva arti ,Ds.Candi Bagi RT/RW 23/04,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Anak (6-18 thn),16.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+360,2024-07-03,nn tia duwi margareta,Ds Kanung 07/02,085648333195,MEMBER,,tambal gigi,GIGI,40000.0,,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal', 'asmef 2x1 prn']"
+361,2024-07-04,nn tia duwi margareta,Ds Kanung 07/02,085648333195,MEMBER,,tambal gigi,GIGI,32500.0,,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal']"
+362,2024-07-05,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,[],['open bur']
+363,2024-07-05,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,tambal gigi,GIGI,30000.0,,1,Dewasa (19-59 thn),51.0,P,[],['cavity treatment']
+364,2024-07-08,aghitsna arsila muiz,Desa Lebakayu 06/02,,,NON MEMBER,tambal gigi,GIGI,,35000.0,0,Anak (6-18 thn),14.0,P,['pulpitis reversible'],['t gic']
+365,2024-07-08,muhammad arrafif shidiq,"Panggung, 3/1, Barat",085730905419,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),7.0,L,['persistensi'],['ext ce']
+366,2024-07-08,fayyasyi uzza,Desa Rejosari 03/01,85648516876,,NON MEMBER,lainnya,GIGI,,10000.0,0,Anak (6-18 thn),7.0,P,['persistensi'],['asepsis']
+367,2024-07-08,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),8.0,L,[],['ext ce']
+368,2024-07-09,erlangga ilham m,Desa rejosari RT/RW 08/02,,,NON MEMBER,tambal gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),20.0,L,[],['t lc']
+369,2024-07-10,faeyza aurelia,Jl. Kemuning No. 18 Madiun,081259252362,,NON MEMBER,tambal gigi,GIGI,0.0,,0,Anak (6-18 thn),11.0,P,['pulpitis reversible'],['t gic']
+370,2024-07-10,charadiva laksita ken nafilah,Jl. Salak Timur X 37/12,81459126155,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),22.0,P,['pulpitis reversible'],['t lc']
+371,2024-07-11,anggita virgiana ,Klorogan 01/01 geger,,,NON MEMBER,gigi berlubang,GIGI,,25000.0,0,Dewasa (19-59 thn),31.0,P,[],['caviton']
+372,2024-07-11,charadiva laksita ken nafilah,Jl. Salak Timur X 37/12,81459126155,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),22.0,P,['pulpitis reversible'],['t lc']
+373,2024-07-16,ana maya wahyu murni,"Jl. Gembili, No. 3, RT/RW. 15/5, Ngegong",081252829994,,NON MEMBER,gigi berlubang,GIGI,,27000.0,0,Dewasa (19-59 thn),43.0,P,['gingival abscess'],"['clindamycin (3x1 dosage)', 'kaditic (2x1 dosage)']"
+374,2024-07-16,muhammad khalil annadhir,Desa Rejosari 017/02,,,NON MEMBER,gusi bengkak,GIGI,,60000.0,0,Balita (1-5 thn),5.0,L,['gingival abscess'],"['asepsis', 'cefadroxil 2x1/2', 'ibuprofen 3x1']"
+375,2024-07-16,muhamad wahid aminudin,Ds. Rejosari 9/2,082120598627,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),30.0,L,['gingiva disease'],"['asepsis', 'open bur']"
+376,2024-07-17,nn.puji lestari,Desa rejosari RT/RW 07/02,,,NON MEMBER,gigi berlubang,GIGI,,0.0,0,Dewasa (19-59 thn),25.0,P,['gingival abscess'],"['asepsis', 'konsultasi']"
+377,2024-07-18,mariyam,Ds Dewan 16/04,,MEMBER,,lainnya,GIGI,0.0,,1,Lansia (≥ 60 thn),73.0,P,[],['tooth grinding']
+378,2024-07-18,ana maya wahyu murni,"Jl. Gembili, No. 3, RT/RW. 15/5, Ngegong",081252829994,,NON MEMBER,cabut gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),43.0,P,['gangren radi x'],['ext']
+379,2024-07-22,wega andhika saputra,Desa Rejosari 05/02,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),21.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+380,2024-07-24,mohammad ardianto syaputra,Desa rejosari RT/RW 06/02,085859879002,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),19.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+381,2024-07-24,hendra fauzan afif syachputra,Desa Krokeh 04/01,,,NON MEMBER,kontrol gigi,GIGI,,55000.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['t lc']
+382,2024-07-24,cristin hudoyo,Jl.Cempaka II 30/06,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),25.0,P,[],['ext']
+383,2024-07-24,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,sakit gigi,GIGI,,20000.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+384,2024-07-24,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Anak (6-18 thn),6.0,P,[],['ext ce']
+385,2024-07-24,wega andhika saputra,Desa Rejosari 05/02,,,NON MEMBER,tambal gigi,GIGI,,40000.0,0,Dewasa (19-59 thn),21.0,L,['pulpitis reversible'],['t lc']
+386,2024-07-25,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Balita (1-5 thn),3.0,P,['pulpitis reversible'],['t lc']
+387,2024-07-25,wega andhika saputra,Desa Rejosari 05/02,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),21.0,L,['pulpitis reversible'],['t lc']
+388,2024-07-25,hendra fauzan afif syachputra,Desa Krokeh 04/01,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['t lc']
+389,2024-07-25,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),6.0,P,['pulpitis reversible'],['t lc']
+390,2024-07-25,cristin hudoyo,Jl.Cempaka II 30/06,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),25.0,P,[],"['ext', 'kaditic (2x1 dosage)', 'betadine kumur 2x1']"
+391,2024-07-29,wega andhika saputra,Desa Rejosari 05/02,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),21.0,L,['pulpitis reversible'],['t lc']
+392,2024-07-29,hendra fauzan afif syachputra,Desa Krokeh 04/01,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),20.0,L,['pulpitis reversible'],['t lc']
+393,2024-07-29,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),6.0,P,['pulpitis reversible'],['t lc']
+394,2024-07-29,rezky raditya pratama,Desa Kanung 07/0,,,NON MEMBER,gusi bengkak,GIGI,,69000.0,0,Anak (6-18 thn),14.0,L,['gingival abscess'],"['clindamycin 3x150mg', 'kaditic (2x1 dosage)', 'betadine kumur 2x1', 'asmef prn 2x1']"
+395,2024-07-31,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),48.0,L,['pulpitis reversible'],['t lc']
+396,2024-08-02,kanya agnur rasel,Desa Watang Panjang Kec Karangbinangun Lamongan,85736115747,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),7.0,P,[],['ext ce']
+397,2024-08-02,ainurrahman daisaq rafif,Jl. Pringgondani  Taman Kota Madiun,,,NON MEMBER,sakit gigi,GIGI,,50000.0,0,Anak (6-18 thn),14.0,L,['gingival abscess'],"['clindamycin 3x150mg', 'kaditic (2x1 dosage)', 'betadine kumur 2x1', 'asmef prn 2x1']"
+398,2024-08-02,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,cabut gigi,GIGI,,20000.0,0,Anak (6-18 thn),9.0,L,[],['ext ce']
+399,2024-08-05,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),21.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+400,2024-08-07,hafidz ramadhan,Desa rejosari RT/RW 05/02,,MEMBER,,cabut gigi,GIGI,0.0,,1,Anak (6-18 thn),6.0,L,[],['ext ce']
+401,2024-08-07,ainurrahman daisaq rafif,Jl. Pringgondani  Taman Kota Madiun,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Anak (6-18 thn),14.0,L,['pulpitis reversible'],['t gic']
+402,2024-08-08,henie puspito rini,Rejosari 9/2,085334590991,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),38.0,P,['pulpitis reversible'],['t gic']
+403,2024-08-09,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Anak (6-18 thn),9.0,L,[],"['pro ext', 'konsultasi']"
+404,2024-08-09,henie puspito rini,Rejosari 9/2,085334590991,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),38.0,P,['pulpitis reversible'],['t gic']
+405,2024-08-15,marla kusuma rahmatiani,Wadeng 03/07 ,,,NON MEMBER,lainnya,GIGI,,23000.0,0,Anak (6-18 thn),6.0,P,[],"['cefadroxil 2x1', 'ibuprofen 3x1', 'pro ext']"
+406,2024-08-15,rusmiati,Sidorejo 24/05,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Dewasa (19-59 thn),45.0,P,['pulpitis reversible'],['konsultasi']
+407,2024-08-16,rusmiati,Sidorejo 24/05,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),45.0,P,['pulpitis reversible'],['t lc']
+408,2024-08-16,zahra nabilla oktafia,Desa Kanung 4/2,,MEMBER,,cabut gigi,GIGI,20000.0,,1,Anak (6-18 thn),9.0,P,['gingival abscess'],"['cefadroxil 2x1', 'ibuprofen 3x1', 'pro ext']"
+409,2024-08-20,heru cahyanto ,Sidorejo 24/05,,,NON MEMBER,sakit gigi,GIGI,,25000.0,0,Lansia (≥ 60 thn),62.0,L,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal']"
+410,2024-08-21,rusmiati,,,,NON MEMBER,karang gigi,GIGI,,70000.0,0,Dewasa (19-59 thn),45.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+411,2024-08-21,zahra nabilla oktafia,,,MEMBER,,cabut gigi,GIGI,0.0,,1,Anak (6-18 thn),9.0,P,['persistensi'],['ext']
+412,2024-08-23,heru cahyanto ,Sidorejo 24/05,,,NON MEMBER,kontrol gigi,GIGI,,25000.0,0,Lansia (≥ 60 thn),62.0,L,[],"['scaling procedure', 'paracetamol prn']"
+413,2024-08-26,partinah,Desa Rejosari RT/RW 07/02,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),47.0,P,['edentolous'],['konsultasi']
+414,2024-08-28,wahyu tunjungasari pradana,Dsn Jomblang 07/03,,,NON MEMBER,gusi bengkak,GIGI,,58000.0,0,Dewasa (19-59 thn),32.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'mp 2x1', 'asmef prn', 'betadine kumur 2x1']"
+415,2024-08-29,rudy praetyo,Desa Bakur RT/RW 01/01,,,NON MEMBER,sakit gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),33.0,L,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+416,2024-09-02,zaky putra maulana,Desa Kanung 07/02,,MEMBER,,sakit gigi,GIGI,22000.0,,1,Balita (1-5 thn),4.0,L,['gingival abscess'],"['cefadrocil syr 2x1', 'ibupropen syr 3x1']"
+417,2024-09-02,joko santoso,Dsn Ngronggo 12/03,081234189777,,NON MEMBER,tambal gigi,GIGI,,15000.0,0,Dewasa (19-59 thn),48.0,L,[],['t lc']
+418,2024-09-03,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+419,2024-09-05,eko arianto,Ds Kanung 03/02,8989156122,,NON MEMBER,sakit gigi,GIGI,,42000.0,0,Dewasa (19-59 thn),44.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'caviplex 1x1']"
+420,2024-09-05,sujani,Ds.Kanung 3/2,,MEMBER,,sakit gigi,GIGI,10000.0,,1,Dewasa (19-59 thn),51.0,P,['gingival abscess'],"['paracetamol prn', 'ibuprofen 2x400mg']"
+421,2024-09-06,sujani,Ds.Kanung 3/2,,MEMBER,,sakit gigi,GIGI,50000.0,,1,Dewasa (19-59 thn),51.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'caviplex 1x1']"
+422,2024-09-09,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis reversible'],['t lc']
+423,2024-09-10,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,lainnya,GIGI,,0.0,0,Dewasa (19-59 thn),54.0,P,['gangren radix ( nekrosis )'],['tooth grinding']
+424,2024-09-10,heri wijayanti,Lebak Ayu 09/02,,,NON MEMBER,cabut gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),35.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 500mg prn']"
+425,2024-09-11,heri wijayanti,Lebak Ayu 09/02,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),35.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+426,2024-09-11,byanaka abdillah el batsya,Jl. Sumber Urip 30/9 Jiwan,,,NON MEMBER,gusi bengkak,GIGI,,0.0,0,Balita (1-5 thn),2.0,L,['gingival abscess'],"['cefadroxil syr 2x1 sdt', 'ibuprofen syr 3x1 sdt']"
+427,2024-09-12,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,cabut gigi,GIGI,,50000.0,0,Balita (1-5 thn),4.0,P,['pulpitis reversible'],['t lc']
+428,2024-09-12,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),54.0,P,[],['t gic']
+429,2024-09-12,yenny kusuma,Jl. Merpati 12/09 ,,,NON MEMBER,karang gigi,GIGI,,,0,Anak (6-18 thn),18.0,P,[],['scaling procedure']
+430,2024-09-13,afeefa farzana ar rosyid,Desa Rejosari 04/01,,,NON MEMBER,tambal gigi,GIGI,,50000.0,0,Balita (1-5 thn),4.0,P,['pulpitis reversible'],['t lc']
+431,2024-09-13,isharini,Kanung 4/1,,MEMBER,,sakit gigi,GIGI,29000.0,,1,Lansia (≥ 60 thn),67.0,P,['abs gingiva nekrosisi'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 500mg prn']"
+432,2024-09-13,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),54.0,P,['gingivitis marginalis kronis'],['konsultasi']
+433,2024-09-18,erni fadlina,Rejosari 12/03,,,NON MEMBER,cabut gigi,GIGI,,30000.0,0,Anak (6-18 thn),8.0,P,[],['ext topikal']
+434,2024-09-18,sri rahayu,Desa.dewan RT/RW 15/04 ,,MEMBER,,lainnya,GIGI,,30000.0,1,Dewasa (19-59 thn),42.0,P,['pulpitis reversible'],['t lc']
+435,2024-09-19,djainem,Desa Rejosari 01/01,,MEMBER,,sakit gigi,GIGI,8000.0,,1,Lansia (≥ 60 thn),72.0,P,['gingival abscess'],"['kaditic (2x1 dosage)', 'pct prn']"
+436,2024-09-19,adi tungkel,Desa.rejosari RT/RW 07/02,,MEMBER,,sakit gigi,GIGI,30000.0,,1,Lansia (≥ 60 thn),79.0,L,[],"['asepsis poviodine', 'aloclair spray']"
+437,2024-09-20,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,tambal gigi,GIGI,,60000.0,0,Anak (6-18 thn),9.0,L,['pulpitis reversible'],['t lc']
+438,2024-09-24,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),9.0,L,['pulpitis reversible'],['t s']
+439,2024-09-24,rabra wida putra,Jl Trengguli Gang 4 NO 7,,,NON MEMBER,tambal gigi,GIGI,,35000.0,0,Anak (6-18 thn),18.0,L,['pulpitis reversible'],['t lc']
+440,2024-09-24,suyadi,Ds Rejosari 03/01,081335160627,,NON MEMBER,cabut gigi,GIGI,,10000.0,0,Dewasa (19-59 thn),51.0,L,['periodentitis apikalis akut'],"['pro ext', 'kontrol dm']"
+441,2024-09-25,albi s,Desa rejosari RT/RW 4/1,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),9.0,L,['pulpitis reversible'],['t s']
+442,2024-09-25,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,sakit gigi,GIGI,,70000.0,0,Dewasa (19-59 thn),32.0,L,['pulpitis reversible'],['t lc']
+443,2024-09-25,roosy azhari,Mojomanis 01/02 Kwadungan Ngawi,82232985719,,NON MEMBER,gusi bengkak,GIGI,,75000.0,0,Dewasa (19-59 thn),30.0,P,['impaksi gigi'],"['clindamycin 3x300mg', 'mp 2x1', 'asmef 500mg prn']"
+444,2024-09-27,danang elang buana,Jl Salak Raya no 38 Madiun,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),32.0,L,['pulpitis reversible'],['tooth grinding']
+445,2024-09-27,nurissa ervikasari,Perum Panorama Wilis F/1A 055/018 Pandean Taman Madiun,85655656585,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),33.0,P,['pulpitis reversible'],"['evacuate gingiva', 'temporary seal']"
+446,2024-09-30,nurissa ervikasari,Perum Panorama Wilis F/1A 055/018 Pandean Taman Madiun,85655656585,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),33.0,P,['impaksi'],['pro ext']
+447,2024-09-30,shofiyyah,Desa Kanung RT/RW 03/03,,,NON MEMBER,gigi berlubang,GIGI,,20000.0,0,Anak (6-18 thn),8.0,P,[],['temporary seal']
+448,2024-09-30,muhhamad hisyam khoirul azzam,Desa Kanung RT/RW 03/03,,,NON MEMBER,gigi berlubang,GIGI,,35000.0,0,Anak (6-18 thn),11.0,L,['pulpitis irreversible'],['t lc']
+449,2024-09-30,suwartini,Desa.rejosari RT/RW 06/02,,MEMBER,,gusi bengkak,GIGI,59000.0,,1,Dewasa (19-59 thn),54.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef 500mg prn', 'betadine kumur 2x1']"
+450,2024-10-01,binti hidayati,Dsn. Ngronggo 10/03,,,NON MEMBER,gigi berlubang,GIGI,,42000.0,0,Dewasa (19-59 thn),32.0,P,['pulpitis reversible'],"['kaditic (2x1 dosage)', 'asmef prn']"
+451,2024-10-02,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,15000.0,0,Dewasa (19-59 thn),54.0,P,[],"['kaditic (2x1 dosage)', 'asmef prn']"
+452,2024-10-04,muhamad wahid aminudin,Ds. Rejosari 9/2,082120598627,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),30.0,L,['dental examination'],['jadwal scaling post psa 47']
+453,2024-10-04,nn.  in'am fawaida,Lebakayu 8/2 Sawahan,081259610073,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),14.0,P,['pulpitis reversible'],['kontrol']
+454,2024-10-04,ita puspitasari,Desa Lebakayu 08/02,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),39.0,P,['pulpitis irreversible'],['t lc']
+455,2024-10-07,ita puspitasari,Desa Lebakayu 08/02,,,NON MEMBER,tambal gigi,GIGI,,25000.0,0,Dewasa (19-59 thn),39.0,P,['pulpitis irreversible'],['t gic']
+456,2024-10-07,adi tungkel,Desa.rejosari RT/RW 07/02,,MEMBER,,gusi bengkak,GIGI,17000.0,,1,Lansia (≥ 60 thn),79.0,L,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)']"
+457,2024-10-08,ita puspitasari,Desa Lebakayu 08/02,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),39.0,P,['retained dental root'],['grinding 47']
+458,2024-10-11,adi tungkel,Desa.rejosari RT/RW 07/02,,MEMBER,,cabut gigi,GIGI,5000.0,,1,Lansia (≥ 60 thn),79.0,L,[],['kaditic (2x1 dosage)']
+459,2024-10-11,putri maulina,Desa Kanung RT/RW 07/01,,MEMBER,,sakit gigi,GIGI,5000.0,,1,Anak (6-18 thn),14.0,P,[],"['scaling procedure', 'kaditic (2x1 dosage)']"
+460,2024-10-11,siti aliyatul faizah,Pucangrejo 03/02,85736813758,,NON MEMBER,tambal gigi,GIGI,,50000.0,0,Dewasa (19-59 thn),48.0,P,['pulpitis irreversible'],['t gic']
+461,2024-10-14,siti aliyatul faizah,Pucangrejo 03/02,85736813758,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),48.0,P,[],['t gic']
+462,2024-10-14,sutining,Desa rejosari RT/RW 05/02,,MEMBER,,tambal gigi,GIGI,20000.0,,1,Dewasa (19-59 thn),51.0,P,[],['t gic']
+463,2024-10-15,nn tia duwi margareta,Ds Kanung 07/02,085648333195,MEMBER,,tambal gigi,GIGI,20000.0,,1,Anak (6-18 thn),18.0,P,['pulpitis irreversible'],['t lc']
+464,2024-10-15,nn masrurotul m,Ds Rejosari 6/2,,MEMBER,,gigi berlubang,GIGI,5000.0,,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],"['evacuate gingiva', 'temporary seal', 'kaditic prn']"
+465,2024-10-16,mufidatul khoiriyah,Desa Rejosari 06/02,,MEMBER,,gusi bengkak,GIGI,30000.0,,1,Dewasa (19-59 thn),23.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn']"
+466,2024-10-16,robingatul koyimah,Desa rejosari RT/RW 06/02,,MEMBER,,cabut gigi,GIGI,0.0,,1,Lansia (≥ 60 thn),47.0,P,[],"['pro ext', 'tunda tdt']"
+467,2024-10-24,richo febriyanto,Ds Jatisari Geger Madiun,85257853651,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,['fraktur lingual'],['ext']
+468,2024-10-24,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,30000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis irresversible'],['t lc']
+469,2024-10-25,richo febriyanto,Ds Jatisari Geger Madiun,85257853651,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,[],['glass ionomer cement']
+470,2024-10-28,hendra cipta,Desa Kanung RT/RW 07/01,,MEMBER,,karang gigi,GIGI,100000.0,,1,Dewasa (19-59 thn),39.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+471,2024-10-28,richo febriyanto,Ds Jatisari Geger Madiun,85257853651,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,L,[],['tooth grinding']
+472,2024-10-30,martini,Kanung 4/1,082140439948,MEMBER,,cabut gigi,GIGI,35000.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis irreversible'],['kaditic']
+473,2024-10-31,martini,Kanung 4/1,082140439948,MEMBER,,gigi berlubang,GIGI,0.0,,1,Dewasa (19-59 thn),36.0,P,['pulpitis akut'],"['eug', 'temporary seal']"
+474,2024-10-31,sri rahayu,Desa.dewan RT/RW 15/04 ,,MEMBER,,gusi bengkak,GIGI,67000.0,,1,Dewasa (19-59 thn),52.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur 2x1']"
+475,2024-11-01,sinta lintang nurwijaya kusuma,Desa Rejosari RT/RW 07/02,,,NON MEMBER,karang gigi,GIGI,,130000.0,0,Anak (6-18 thn),16.0,P,"['gingivitis marginalis kronis', 'gingival abscess']","['scaling procedure', 'clindamycin 3x150mg', 'asmef prn']"
+476,2024-10-04,muhammad rifai,Klagen Serut 06/01 Jiwan,,,NON MEMBER,karang gigi,GIGI,,100000.0,0,Dewasa (19-59 thn),24.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+477,2024-10-06,tia duwi margareta,Ds Kanung 07/02,085648333195,MEMBER,,sakit gigi,GIGI,44000.0,,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],"['clindamycin 3x150mg', 'kaditic (2x1 dosage)', 'devit', 'temporary seal']"
+478,2024-10-06,tia duwi margareta,Ds Kanung 07/02,085648333195,MEMBER,,sakit gigi,GIGI,0.0,,1,Anak (6-18 thn),17.0,P,['pulpitis irreversible'],"['devit', 'temporary seal']"
+479,2024-10-08,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,gigi berlubang,GIGI,,35000.0,0,Anak (6-18 thn),7.0,P,['pulpitis irreversible'],"['temporary seal', 'pct syr prn']"
+480,2024-11-11,aisyah aulia izza tunnisa,Desa Kanung RT/RW 02/01,,,NON MEMBER,lainnya,GIGI,,0.0,0,Anak (6-18 thn),7.0,P,['periodentitis'],"['asepsis', 'konsultasi']"
+481,2024-11-11,azizah rizqi budi,Jl. KENDALISODO 04/02,89603058199,,NON MEMBER,gigi berlubang,GIGI,,0.0,0,Dewasa (19-59 thn),19.0,P,[],"['pro ext', 'konsultasi']"
+482,2024-11-13,muwaffiq ummu hanifa,Desa Lebakayu 07/02,,,NON MEMBER,lainnya,GIGI,,35000.0,0,Anak (6-18 thn),8.0,P,['periodentitis'],['ext topical']
+483,2024-11-13,suparmi,Desa Kanung 01/02,,MEMBER,,gigi berlubang,GIGI,65000.0,,1,Lansia (≥ 60 thn),74.0,P,['gingival abscess'],"['clindamycin 3x300mg', 'kaditic (2x1 dosage)', 'asmef prn', 'betadine kumur 2x1']"
+484,2024-11-14,muwaffiq ummu hanifa,Desa Lebakayu 07/02,,,NON MEMBER,lainnya,GIGI,,0.0,0,Anak (6-18 thn),8.0,P,[],['evaluasi 1 bulan lagi']
+485,2024-11-15,muhammad yazid ubaidillah,Ds Lebakayu 06/02,81455049394,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Anak (6-18 thn),9.0,L,['pulpitis irreversible'],['temporary seal']
+486,2024-11-20,dr zulfaa karomah,PERUMAHAN CITY GARDEN JIWAN,,,NON MEMBER,gigi berlubang,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,P,['pulpitis irreversible'],['t lc']
+487,2024-11-26,najwa aqila qoirunisa,Desa Rejosari 06/02,,MEMBER,,sakit gigi,GIGI,17500.0,,1,Balita (1-5 thn),4.0,P,['gingival abscess'],"['cefadroxil syr 2x1cth', 'ibuprofen syr 3x1 cth']"
+488,2024-11-26,zumrotul,Desa Rejosari 12/03,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Dewasa (19-59 thn),22.0,P,['impaksi'],"['pro ext', 'alloclair']"
+489,2024-11-26,dita handayani,GOLAN 03/02,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),21.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+490,2024-11-27,najwa aqila qoirunisa,Desa Rejosari 06/02,,MEMBER,,gusi bengkak,GIGI,0.0,,1,Balita (1-5 thn),4.0,P,['gingival abscess'],['asepsis']
+491,2024-12-05,sukanti,Desa Kanung 08/01,,MEMBER,,sakit gigi,GIGI,107000.0,,1,Dewasa (19-59 thn),50.0,P,[],"['betadine kumur', 'amoxicillin (3x1 dosage)']"
+492,2024-12-05,sumari,Desa Rejosari 05/02,,,NON MEMBER,sakit gigi,GIGI,,52000.0,0,Lansia (≥ 60 thn),64.0,L,[],"['ext', 'asmef prn']"
+493,2024-12-09,elmira azzahra nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,cabut gigi,GIGI,,0.0,0,Anak (6-18 thn),6.0,P,[],['ext ce']
+494,2024-12-09,oky mukti nugraha,Jalan Pringgondani I / 33 Taman Madiun,,,NON MEMBER,sakit gigi,GIGI,,0.0,0,Dewasa (19-59 thn),32.0,L,['traumatic ulcer'],['betadin gargle']
+495,2024-12-10,alisa izatun nisa',"Gerung 2/12 Babadan , Pangkur Ngawi",,,NON MEMBER,tambal gigi,GIGI,,36500.0,0,Anak (6-18 thn),9.0,P,['pulpitis'],"['ibupropen 2x1/2', 'vit c 1x1']"
+496,2024-12-10,ardelia faizah  harsanti,Jatisari 22/05,,,NON MEMBER,karang gigi,GIGI,,105000.0,0,Dewasa (19-59 thn),19.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+497,2024-12-11,ardelia faizah  harsanti,Jatisari 22/05,,,NON MEMBER,kontrol gigi,GIGI,,0.0,0,Dewasa (19-59 thn),19.0,P,['moloklusi'],['pro ext']
+498,2024-12-11,hafid zamrudin,Rejosari 7/2,083845333352,,NON MEMBER,kontrol gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),21.0,L,['pulpitis irreversible'],['t gic']
+499,2024-12-16,narti,Ds. Kanung 02/02,,MEMBER,,sakit gigi,GIGI,5000.0,,1,Dewasa (19-59 thn),58.0,P,[],"['scaling 16', 'kaditic (2x1 dosage)']"
+500,2024-12-17,narti,Ds. Kanung 02/02,,MEMBER,,karang gigi,GIGI,100000.0,,1,Dewasa (19-59 thn),58.0,P,[],['scaling ant inf']
+501,2024-12-18,wulandari,Oro-Oro Ombo 31/01,,,NON MEMBER,tambal gigi,GIGI,,20000.0,0,Dewasa (19-59 thn),54.0,P,['pulpitis irreversible'],['t lc']
+502,2024-12-20,abda zaky fauzi,DSN KARANGANYAR 13/006,,,NON MEMBER,cabut gigi,GIGI,,20000.0,0,Anak (6-18 thn),11.0,L,['pulpitis irreversible'],"['t lc', 'scaling 36']"
+503,2024-12-23,abda zaky fauzi,DSN KARANGANYAR 13/006,,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Anak (6-18 thn),11.0,L,['pulpitis irreversible'],['t lc']
+504,2024-12-23,alsha khaira nabiha,Ds. Kanung 05/02,,MEMBER,,sakit gigi,GIGI,0.0,,1,Anak (6-18 thn),9.0,P,['persistensi'],"['konsultasi', 'evaluasi 2 minggu lagi pro ext']"
+505,2024-12-23,herlambang titah wiguno,Rejosari 05/02,,MEMBER,,karang gigi,GIGI,,100000.0,1,Anak (6-18 thn),17.0,L,['gingivitis marginalis kronis'],['scaling procedure']
+506,2024-12-23,elvivana maisaroh,Ds Pucangrejo 13/06,081359274517,,NON MEMBER,tambal gigi,GIGI,,60000.0,0,Dewasa (19-59 thn),42.0,P,['pulpitis irreversible'],['t lc']
+507,2024-12-24,muhamad refan choirul iman,REJOSARI 07/02,,,NON MEMBER,lainnya,GIGI,,30000.0,0,Anak (6-18 thn),6.0,L,['periodentitis'],['ext topikal']
+508,2024-12-24,narti,Ds. Kanung 02/02,,MEMBER,,kontrol gigi,GIGI,0.0,,1,Dewasa (19-59 thn),58.0,P,['pulpitis irreversible'],['t lc']
+509,2024-12-24,dhinar anzani adevilyon,Karangmojo 13/4 Magetan,,,NON MEMBER,karang gigi,GIGI,,0.0,0,Dewasa (19-59 thn),27.0,P,['gingivitis marginalis kronis'],['scaling procedure']
+510,2024-12-24,elvivana maisaroh,Ds Pucangrejo 13/06,081359274517,,NON MEMBER,tambal gigi,GIGI,,0.0,0,Dewasa (19-59 thn),42.0,P,['pulpitis irreversible'],['t lc']

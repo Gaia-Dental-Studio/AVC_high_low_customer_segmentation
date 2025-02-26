@@ -5,11 +5,15 @@ import analytics
 import analytics2
 import customer_based_app
 import rfm_analysis
-
+from basic_analytics import streamlit as basic_analytics
+st.set_page_config(layout="wide")
 # Create sidebar with two options
-selection = st.sidebar.selectbox("Select Analysis Type", ["Customer-Based Analysis", "RFM Analysis"])
+selection = st.sidebar.selectbox("Select Analysis Type", ["Basic Analytics","Customer-Based Analysis", "RFM Analysis"])
 
-if selection == "Customer-Based Analysis":
+if selection == "Basic Analytics":
+    basic_analytics.app()
+
+elif selection == "Customer-Based Analysis":
     customer_based_app.app()
 
 elif selection == "RFM Analysis":

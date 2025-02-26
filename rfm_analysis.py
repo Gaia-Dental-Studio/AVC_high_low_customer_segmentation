@@ -4,6 +4,8 @@ import numpy as np
 import datetime as dt
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
 
 
 def app():
@@ -14,7 +16,15 @@ def app():
             "and monetary value.")
 
     # Load the data
-    df = pd.read_csv("patient_transaction.csv")
+    # df = pd.read_csv("patient_transaction.csv")
+    df = pd.read_csv("haoey_data_processed.csv")
+    
+    ### Actual Transaction Data
+    st.dataframe(df, hide_index=True)
+    
+    st.divider()
+
+    st.markdown("### Date Filtering for RFM Analysis")
 
     # Convert date to datetime format
     df['Date'] = pd.to_datetime(df['Date'])
@@ -62,56 +72,81 @@ def app():
     # Split the RFM_Segment into R, F, and M scores for pivot purposes
     rfm[['R_Score', 'F_Score', 'M_Score']] = rfm['RFM_Segment'].apply(lambda x: pd.Series(list(x)))
 
-    st.dataframe(rfm)
+    st.markdown("#### RFM Calculation Result")
+
+    st.dataframe(rfm, use_container_width=True)
 
     # Visualization objects
+    
+    col1, col2 = st.columns(2)
 
-    # 1. RFM Segment Heatmap
-    segment_counts = rfm.groupby(['R_Score', 'M_Score']).size().reset_index(name='Count')
-    fig_1, ax1 = plt.subplots(figsize=(10, 8))
-    pivot_data = segment_counts.pivot(index="R_Score", columns="M_Score", values="Count")
-    sns.heatmap(pivot_data, annot=True, fmt="d", ax=ax1)
-    ax1.set_title("RFM Segment Distribution Heatmap")
+    with col1:
 
-    st.markdown("### RFM Segment Distribution Heatmap")
-    st.write("This heatmap shows the distribution of patients across different RFM segments," 
-            "based on Recency and Monetary scores. The Recency score (rows) represents how recently patients have visited,"
-            "and the Monetary score (columns) indicates their total spending.")
+        # 1. RFM Segment Heatmap
+        segment_counts = rfm.groupby(['R_Score', 'M_Score']).size().reset_index(name='Count')
+        fig_1, ax1 = plt.subplots(figsize=(10, 8))
 
-    # Display the heatmap in Streamlit
-    st.pyplot(fig_1)
+        # Convert numeric scores to formatted labels
+        segment_counts['R_Label'] = 'R' + segment_counts['R_Score'].astype(str)
+        segment_counts['M_Label'] = 'M' + segment_counts['M_Score'].astype(str)
+        
+        # rename column R_Label to R Score and M_Label to M Score
+        segment_counts.rename(columns={'R_Label':'R Score', 'M_Label':'M Score'}, inplace=True)
 
+        pivot_data = segment_counts.pivot(index="R Score", columns="M Score", values="Count")
 
-    # 2. Recency-Frequency Scatter Plot
-    fig_2, ax2 = plt.subplots(figsize=(7, 7))
-    sns.scatterplot(data=rfm, x='Recency', y='Frequency', size='Monetary', hue='RFM_Score', palette="viridis", sizes=(20, 200), ax=ax2)
-    ax2.set_title("Recency-Frequency Scatter Plot")
-    ax2.set_xlabel("Recency (days)")
-    ax2.set_ylabel("Frequency (number of transactions)")
-    ax2.legend(title='RFM Score')
-
-    st.markdown("### Recency-Frequency Scatter Plot")
-
-    st.write("This scatter plot visualizes the relationship between Recency and Frequency for each patient."
-            "The size of each point represents the patient’s Monetary score, while the color indicates the overall RFM Score.")
-
-    # Display the scatter plot in Streamlit
-    st.pyplot(fig_2)
-
-    # 3. RFM Segment Count Bar Plot
-    fig_3, ax3 = plt.subplots(figsize=(12, 6))
-    sns.countplot(data=rfm, x='RFM_Score', palette='coolwarm', ax=ax3)
-    ax3.set_title("Patient Distribution by RFM Score")
-    ax3.set_xlabel("RFM Score")
-    ax3.set_ylabel("Number of Patients")
+        sns.heatmap(pivot_data, annot=True, fmt="d", ax=ax1)
+        ax1.set_title("RFM Segment Distribution Heatmap")
+        
+        ax1.invert_yaxis()
 
 
-    st.markdown("### Patient Distribution by RFM Score")
+        st.markdown("### RFM Segment Distribution Heatmap")
+        st.write("This heatmap shows the distribution of patients across different RFM segments," 
+                "based on Recency and Monetary scores. The Recency score (rows) represents how recently patients have visited,"
+                "and the Monetary score (columns) indicates their total spending.")
 
-    st.write("This bar plot shows the distribution of patients across different overall RFM Scores," 
-            "allowing you to understand the variety and number of patients in each score category.")
-    # Display the bar plot in Streamlit
-    st.pyplot(fig_3)
+        # Display the heatmap in Streamlit
+        st.pyplot(fig_1)
+
+    with col2:
+
+        # 2. Recency-Frequency Scatter Plot
+        fig_2, ax2 = plt.subplots(figsize=(7, 7))
+        sns.scatterplot(data=rfm, x='Recency', y='Frequency', size='Monetary', hue='RFM_Score', palette="viridis", sizes=(20, 200), ax=ax2)
+        ax2.set_title("Recency-Frequency Scatter Plot")
+        ax2.set_xlabel("Recency (days)")
+        ax2.set_ylabel("Frequency (number of transactions)")
+        ax2.legend(title='RFM Score')
+
+        st.markdown("### Recency-Frequency Scatter Plot")
+
+        st.write("This scatter plot visualizes the relationship between Recency and Frequency for each patient."
+                "The size of each point represents the patient’s Monetary score, while the color indicates the overall RFM Score.")
+
+        # Display the scatter plot in Streamlit
+        st.pyplot(fig_2)
+
+    col3, col4 = st.columns(2)
+
+    with col3:
+
+        # 3. RFM Segment Count Bar Plot
+        fig_3, ax3 = plt.subplots(figsize=(12, 6))
+        sns.countplot(data=rfm, x='RFM_Score', 
+                      color='royalblue',
+                      ax=ax3)
+        ax3.set_title("Patient Distribution by RFM Score")
+        ax3.set_xlabel("RFM Score")
+        ax3.set_ylabel("Number of Patients")
+
+
+        st.markdown("### Patient Distribution by RFM Score")
+
+        st.write("This bar plot shows the distribution of patients across different overall RFM Scores," 
+                "allowing you to understand the variety and number of patients in each score category.")
+        # Display the bar plot in Streamlit
+        st.pyplot(fig_3)
 
 
     st.markdown("### Filter by Customer Segment")
@@ -143,4 +178,115 @@ def app():
         st.dataframe(rfm[rfm['RFM_Segment']=='144'])
     with tab6:
         st.dataframe(rfm[rfm['RFM_Segment']=='111'])
+        
+    
+    # create treemap with sns and matplotlib for "Best Customers", "Almost Lost", "Lost Customers", "Lost Cheap Customers"
+    
+    # Best Customers
+    best_customers = rfm[rfm['RFM_Segment']=='444']
+    best_customers_count = len(best_customers)
+    best_customers_count
+    
+    # Almost Lost
+    almost_lost = rfm[rfm['RFM_Segment']=='244']
+    almost_lost_count = len(almost_lost)
+    almost_lost_count
+    
+    # Lost Customers
+    lost_customers = rfm[rfm['RFM_Segment']=='144']
+    lost_customers_count = len(lost_customers)
+    lost_customers_count
+    
+    # Lost Cheap Customers
+    lost_cheap_customers = rfm[rfm['RFM_Segment']=='111']
+    lost_cheap_customers_count = len(lost_cheap_customers)
+    lost_cheap_customers_count
+    
+    # Create Valuable Customers which have combination score of 3 or 4 except 444
+    valuable_customers = rfm[(rfm['RFM_Segment'] != '444') & 
+                             ((rfm['R_Score'].astype(int) >= 3) | 
+                              (rfm['F_Score'].astype(int) >= 3) | 
+                              (rfm['M_Score'].astype(int) >= 3))]
+    valuable_customers_count = len(valuable_customers)
+    valuable_customers_count
+    
+    # Create Less Valuable Customers which have combination score of 1 or 2 except 111
+    less_valuable_customers = rfm[(rfm['RFM_Segment'] != '111') & 
+                                  ((rfm['R_Score'].astype(int) <= 2) | 
+                                   (rfm['F_Score'].astype(int) <= 2) | 
+                                   (rfm['M_Score'].astype(int) <= 2))]
+    less_valuable_customers_count = len(less_valuable_customers)
+    less_valuable_customers_count
+    
+    
+    
+    
+    # # Others Customers
+    # others_customers = rfm[(rfm['RFM_Segment'] != '444') & 
+    #                        (rfm['RFM_Segment'] != '244') & 
+    #                        (rfm['RFM_Segment'] != '144') & 
+    #                        (rfm['RFM_Segment'] != '111') &
+    #                        (rfm['RFM_Segment'].isin(valuable_customers['RFM_Segment']) == False) &
+    #                        (rfm['RFM_Segment'].isin(less_valuable_customers['RFM_Segment']) == False)]
+    # others_customers_count = len(others_customers)
+    
+    
+   # Define segment names and their corresponding values
+    labels = [
+        # "container", 
+              "Segmented", "Others",  
+            "Best Customers", "Almost Lost", "Lost Customers", "Lost Cheap Customers",
+            "Valuable Customers", "Less Valuable Customers"]
+
+    # Define hierarchy structure
+    parents = [
+        # "", 
+        "All Customers", "All Customers",  
+            "Segmented", "Segmented", "Segmented", "Segmented",  
+            "Others", "Others"]
+
+    # Define values (size of each segment)
+    values = [
+        # 0,  # container (root, doesn't have a value)
+            # best_customers_count + almost_lost_count + lost_customers_count + lost_cheap_customers_count,  # Segmented total
+            0,
+            # valuable_customers_count + less_valuable_customers_count,  # Others total
+            0,
+            best_customers_count, almost_lost_count, lost_customers_count, lost_cheap_customers_count,
+            valuable_customers_count, less_valuable_customers_count]
+
+    # Create Treemap
+    fig_4 = go.Figure(go.Treemap(
+        labels=labels,
+        parents=parents,
+        values=values,
+        # marker_colorscale='gray',  # Use Blues color scale
+    ))
+    
+    fig_4.update_traces(root_color="lightgrey")
+    
+    fig_4.update_layout(
+    treemapcolorway = ["lightblue", "pink"])
+
+
+    # Update layout for better spacing
+    fig_4.update_layout(margin=dict(t=50, l=25, r=25, b=25), 
+                        # title="Customer Segmentation Treemap"
+                        )
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+
+        st.markdown("### Customer Segmentation Treemap")
+        
+        st.write("This treemap visualizes the segmentation of customers based on their RFM scores. "
+                "The segments include 'Best Customers', 'Almost Lost', 'Lost Customers', 'Lost Cheap Customers', 'Valuable Customers', and 'Less Valuable Customers'. "
+                "The 'Valuable Customers' and 'Less Valuable Customers' belong to 'Others' category and the rest belong to 'Segmented' category.")
+        
+        st.write("Valuable Customers are those who have a combination score of 3 or 4 in Recency, Frequency, or Monetary except 444 (Best Customers). ")
+        st.write("Less Valuable Customers are those who have a combination score of 1 or 2 in Recency, Frequency, or Monetary except 111 (Lost Cheap Customers).")
+
+        # Display in Streamlit
+        st.plotly_chart(fig_4)
         

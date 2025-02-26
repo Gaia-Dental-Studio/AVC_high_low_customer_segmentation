@@ -46,7 +46,7 @@ def app():
         
         # button = st.button("Generate")
         
-        st.markdown("**Transaction Data**")
+        
 
         # Create an instance of the class
         transaction_generator = ModelTransactionGenerator(
@@ -61,11 +61,14 @@ def app():
             end_date=end_date
         )
 
-   
+        st.markdown("**Transaction Data**")
 
 
         patient_transaction_df = transaction_generator.create_transaction_df()
         patient_transaction_df.to_csv('patient_transaction.csv', index=False)
+        
+        
+        
 
         # Display the generated DataFrame
         st.dataframe(patient_transaction_df)
