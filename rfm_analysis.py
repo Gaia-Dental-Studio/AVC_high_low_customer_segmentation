@@ -16,8 +16,8 @@ def app():
             "and monetary value.")
 
     # Load the data
-    # df = pd.read_csv("patient_transaction.csv")
-    df = pd.read_csv("haoey_data_processed.csv")
+    df = pd.read_csv("patient_transaction.csv")
+    # df = pd.read_csv("haoey_data_processed.csv")
     
     ### Actual Transaction Data
     st.dataframe(df, hide_index=True)
@@ -40,12 +40,20 @@ def app():
         
     df = df[df['Date'] >= beginning_date]
 
+    df['Date_2'] = df['Date'].dt.date
+
     # Calculate RFM metrics
     rfm = df.groupby('Patient ID').agg({
         'Date': lambda x: (reference_date - x.max()).days,  # Recency
-        'Patient ID': 'count',                              # Frequency
+        'Date_2': lambda x: x.nunique(),                      # Frequency (count of unique dates)
         'Price': 'sum'                                      # Monetary
-    }).rename(columns={'Date': 'Recency', 'Patient ID': 'Frequency', 'Price': 'Monetary'})
+    }).rename(columns={'Date_2': 'Frequency', 'Price': 'Monetary'})
+
+    # Rename Recency column separately as we used 'Date' twice
+    rfm.rename(columns={rfm.columns[0]: 'Recency'}, inplace=True)
+    
+    # st.dataframe(rfm)
+    # rfm.to_csv('sample_rfm.csv', index = False)
 
     # Function to attempt quantile binning with fallback
     def flexible_binning(column, max_bins, labels):
@@ -59,6 +67,10 @@ def app():
                 num_bins -= 1
         # If it fails down to 1 bin, just assign the single label to all rows
         return pd.Series([labels[0]] * len(column), index=column.index)
+    
+    def forced_binning(column, max_bins, labels):
+        return pd.cut(column.rank(method="dense"), bins=max_bins, labels=labels, right=False)
+
 
     # Apply flexible binning for R, F, and M scores
     rfm['R_Score'] = flexible_binning(rfm['Recency'], 4, [4, 3, 2, 1])
@@ -71,6 +83,9 @@ def app():
 
     # Split the RFM_Segment into R, F, and M scores for pivot purposes
     rfm[['R_Score', 'F_Score', 'M_Score']] = rfm['RFM_Segment'].apply(lambda x: pd.Series(list(x)))
+
+    st.write(len(rfm))
+  
 
     st.markdown("#### RFM Calculation Result")
 
@@ -149,6 +164,25 @@ def app():
         st.pyplot(fig_3)
 
 
+        
+        # # 3. RFM Segment Swarm Plot (Horizontal)
+        # fig_4, ax4 = plt.subplots(figsize=(12, 6))
+
+        # # Create a binned column for Monetary values
+        # rfm['Monetary_Binned'] = pd.cut(rfm['Monetary'], bins=20, labels=False)
+
+        # # Swarmplot with horizontal orientation
+        # sns.swarmplot(data=rfm, y='Monetary_Binned', x='Monetary', 
+        #             color='royalblue', ax=ax4, size=5, alpha=0.7)
+
+        # ax4.set_title("Patient Distribution by Monetary Value (Swarm Plot)")
+        # ax4.set_ylabel("Monetary Value (Binned)")
+        # ax4.set_xlabel("Monetary Value")
+        # ax4.set_yticks(range(20))  # Ensures bins are labeled correctly
+        # ax4.tick_params(axis='y', rotation=0)
+
+        # st.pyplot(fig_4)
+
     st.markdown("### Filter by Customer Segment")
 
 
@@ -180,6 +214,41 @@ def app():
         st.dataframe(rfm[rfm['RFM_Segment']=='111'])
         
     
+
+    def assign_segment(row):
+        """Assigns customer segment based on RFM_Segment and RFM scores."""
+        if row['RFM_Segment'] == '444':
+            return 'Best Customers'
+        elif row['RFM_Segment'] == '244':
+            return 'Almost Lost'
+        elif row['RFM_Segment'] == '144':
+            return 'Lost Customers'
+        elif row['RFM_Segment'] == '111':
+            return 'Lost Cheap Customers'
+        elif (row['RFM_Segment'] != '444') and (
+            int(row['R_Score']) >= 3 and int(row['F_Score']) >= 3 and int(row['M_Score']) >= 3):
+            return 'Valuable Customers'
+        elif (row['RFM_Segment'] != '111') and (
+            int(row['R_Score']) <= 2 and int(row['F_Score']) <= 2 and int(row['M_Score']) <= 2):
+            return 'Less Valuable Customers'
+        else:
+            return 'Moderate Customers'  # Default fallback for any unexpected cases
+
+    def assign_segment_category(row):
+        if row['Segment'] in ['Best Customers', 'Almost Lost', 'Valuable Customers']:
+            return 'Customers to Retain'
+        elif row['Segment'] in ['Lost Customers', 'Lost Cheap Customers', 'Less Valuable Customers']:
+            return 'Customers to Concern'
+        
+        else:
+            return 'Customers to Improve'
+
+    # Apply function to create the new 'Segment' column
+    rfm['Segment'] = rfm.apply(assign_segment, axis=1)
+    rfm['Segment Category'] = rfm.apply(assign_segment_category, axis=1)
+
+    
+    
     # create treemap with sns and matplotlib for "Best Customers", "Almost Lost", "Lost Customers", "Lost Cheap Customers"
     
     # Best Customers
@@ -204,22 +273,25 @@ def app():
     
     # Create Valuable Customers which have combination score of 3 or 4 except 444
     valuable_customers = rfm[(rfm['RFM_Segment'] != '444') & 
-                             ((rfm['R_Score'].astype(int) >= 3) | 
-                              (rfm['F_Score'].astype(int) >= 3) | 
+                             ((rfm['R_Score'].astype(int) >= 3) & 
+                              (rfm['F_Score'].astype(int) >= 3) & 
                               (rfm['M_Score'].astype(int) >= 3))]
+    
     valuable_customers_count = len(valuable_customers)
     valuable_customers_count
     
+
+    
     # Create Less Valuable Customers which have combination score of 1 or 2 except 111
     less_valuable_customers = rfm[(rfm['RFM_Segment'] != '111') & 
-                                  ((rfm['R_Score'].astype(int) <= 2) | 
-                                   (rfm['F_Score'].astype(int) <= 2) | 
+                                  ((rfm['R_Score'].astype(int) <= 2) &
+                                   (rfm['F_Score'].astype(int) <= 2) & 
                                    (rfm['M_Score'].astype(int) <= 2))]
     less_valuable_customers_count = len(less_valuable_customers)
     less_valuable_customers_count
     
     
-    
+    moderate_customers_count = len(rfm[rfm['Segment'] == 'Moderate Customers'])
     
     # # Others Customers
     # others_customers = rfm[(rfm['RFM_Segment'] != '444') & 
@@ -231,62 +303,208 @@ def app():
     # others_customers_count = len(others_customers)
     
     
-   # Define segment names and their corresponding values
+
+    # Define segment names and their corresponding values
     labels = [
-        # "container", 
-              "Segmented", "Others",  
-            "Best Customers", "Almost Lost", "Lost Customers", "Lost Cheap Customers",
-            "Valuable Customers", "Less Valuable Customers"]
+        "Segmented", "Others",  
+        "Best Customers", "Almost Lost", "Lost Customers", "Lost Cheap Customers",
+        "Valuable Customers", "Less Valuable Customers"
+    ]
 
     # Define hierarchy structure
     parents = [
-        # "", 
         "All Customers", "All Customers",  
-            "Segmented", "Segmented", "Segmented", "Segmented",  
-            "Others", "Others"]
+        "Segmented", "Segmented", "Segmented", "Segmented",  
+        "Others", "Others"
+    ]
 
     # Define values (size of each segment)
     values = [
-        # 0,  # container (root, doesn't have a value)
-            # best_customers_count + almost_lost_count + lost_customers_count + lost_cheap_customers_count,  # Segmented total
-            0,
-            # valuable_customers_count + less_valuable_customers_count,  # Others total
-            0,
-            best_customers_count, almost_lost_count, lost_customers_count, lost_cheap_customers_count,
-            valuable_customers_count, less_valuable_customers_count]
+        0,  # "Segmented" total
+        0,  # "Others" total
+        best_customers_count, almost_lost_count, lost_customers_count, lost_cheap_customers_count,
+        valuable_customers_count, less_valuable_customers_count
+    ]
+
+    # Explicit color mapping
+    color_discrete_map = {
+        "Segmented": "lightgrey",  # Parent
+        "Others": "lightgrey",  # Parent
+        "Best Customers": "lightblue",
+        "Almost Lost": "lightblue",
+        "Valuable Customers": "lightblue",
+        "Less Valuable Customers": "pink",
+        "Lost Customers": "pink",
+        "Lost Cheap Customers": "pink"
+    }
 
     # Create Treemap
     fig_4 = go.Figure(go.Treemap(
         labels=labels,
         parents=parents,
         values=values,
-        # marker_colorscale='gray',  # Use Blues color scale
+        marker=dict(colors=[color_discrete_map[label] for label in labels])  # Assign colors explicitly
     ))
-    
-    fig_4.update_traces(root_color="lightgrey")
-    
+
+    # Update layout
     fig_4.update_layout(
-    treemapcolorway = ["lightblue", "pink"])
+        margin=dict(t=50, l=25, r=25, b=25),
+        treemapcolorway=["lightblue", "pink", "lightgrey"]
+    )
 
 
-    # Update layout for better spacing
-    fig_4.update_layout(margin=dict(t=50, l=25, r=25, b=25), 
-                        # title="Customer Segmentation Treemap"
-                        )
+    # Define segment names and their corresponding values
+    labels = [
+        "Customers to Retain", "Customers to Improve", "Customers to Concern",  # New parent categories
+        "Best Customers", "Almost Lost", "Valuable Customers",  # Light Blue
+        "Moderate Customers",
+        "Less Valuable Customers", "Lost Customers", "Lost Cheap Customers"  # Pink
+    ]
+
+    # Define hierarchy structure (assigning new parents)
+    parents = [
+        "All Customers", "All Customers", "All Customers",  # Parents of the two categories
+        "Customers to Retain", "Customers to Retain", "Customers to Retain",  # Light Blue
+        "Customers to Improve",
+        "Customers to Concern", "Customers to Concern", "Customers to Concern"  # Pink
+    ]
+
+    # Define values (size of each segment)
+    values = [
+        0,  # "Customers to Retain" total (inferred)
+        0,  # "Customers to Improve" total (inferred)
+        0,  # "Customers to Concern" total (inferred)
+        best_customers_count, almost_lost_count, valuable_customers_count,  # Light Blue
+        moderate_customers_count,
+        less_valuable_customers_count, lost_customers_count, lost_cheap_customers_count  # Pink
+    ]
+
+    # Calculate percentage values dynamically
+    total_customers = sum(values[3:])  # Ignore parent nodes
+    values_percentage = [
+        "0%", "0%", "0%",  # Parents (ignored)
+        f"{(best_customers_count / total_customers) * 100:.2f}%",
+        f"{(almost_lost_count / total_customers) * 100:.2f}%",
+        f"{(valuable_customers_count / total_customers) * 100:.2f}%",
+        f"{(moderate_customers_count / total_customers) * 100:.2f}%",
+        f"{(less_valuable_customers_count / total_customers) * 100:.2f}%",
+        f"{(lost_customers_count / total_customers) * 100:.2f}%",
+        f"{(lost_cheap_customers_count / total_customers) * 100:.2f}%"
+    ]
+
+    # Explicit color mapping
+    color_discrete_map = {
+        "Customers to Retain": "lightgrey",  # Parent color
+        "Customers to Improve": "lightgrey",  # Parent color
+        "Customers to Concern": "lightgrey",  # Parent color
+        "Best Customers": "lightblue",
+        "Almost Lost": "lightblue",
+        "Valuable Customers": "lightblue",
+        "Moderate Customers": "plum",
+        "Less Valuable Customers": "pink",
+        "Lost Customers": "pink",
+        "Lost Cheap Customers": "pink"
+    }
+
+    # Create hover text format (only appears when hovering)
+    custom_hover_text = [
+        f"Segment: {label}<br>Value: {value}<br>Percentage: {percentage}"
+        for label, value, percentage in zip(labels, values, values_percentage)
+    ]
+
+    # Create Treemap
+    fig_5 = go.Figure(go.Treemap(
+        labels=labels,  # Only segment names will be visible inside the blocks
+        parents=parents,
+        values=values,
+        marker=dict(colors=[color_discrete_map[label] for label in labels]),  # Assign explicit colors
+        hovertext=custom_hover_text,  # Detailed information appears on hover
+        hoverinfo="text"  # Show hover text only when hovering
+    ))
+
+    # Update layout
+    fig_5.update_layout(
+        margin=dict(t=50, l=25, r=25, b=25),
+        treemapcolorway=["lightblue", "pink", "lightgrey"]
+    )
+
+
+
+
+    st.markdown("### Customer Segmentation Treemap")
     
-    col1, col2 = st.columns(2)
+    st.write("This treemap visualizes the segmentation of customers based on their RFM scores. "
+            "The segments include 'Best Customers', 'Almost Lost', 'Lost Customers', 'Lost Cheap Customers', 'Valuable Customers', and 'Less Valuable Customers'. "
+            "The 'Valuable Customers' and 'Less Valuable Customers' belong to 'Others' category and the rest belong to 'Segmented' category.")
     
-    with col1:
+    st.write("Valuable Customers are those who have a combination score of 3 or 4 in Recency, Frequency, or Monetary except 444 (Best Customers). ")
+    st.write("Less Valuable Customers are those who have a combination score of 1 or 2 in Recency, Frequency, or Monetary except 111 (Lost Cheap Customers).")
 
-        st.markdown("### Customer Segmentation Treemap")
-        
-        st.write("This treemap visualizes the segmentation of customers based on their RFM scores. "
-                "The segments include 'Best Customers', 'Almost Lost', 'Lost Customers', 'Lost Cheap Customers', 'Valuable Customers', and 'Less Valuable Customers'. "
-                "The 'Valuable Customers' and 'Less Valuable Customers' belong to 'Others' category and the rest belong to 'Segmented' category.")
-        
-        st.write("Valuable Customers are those who have a combination score of 3 or 4 in Recency, Frequency, or Monetary except 444 (Best Customers). ")
-        st.write("Less Valuable Customers are those who have a combination score of 1 or 2 in Recency, Frequency, or Monetary except 111 (Lost Cheap Customers).")
 
-        # Display in Streamlit
-        st.plotly_chart(fig_4)
+
+    # st.plotly_chart(fig_4)
+    
+
+    st.plotly_chart(fig_5)
         
+        
+    rfm_by_segment = rfm.groupby('Segment').agg({
+        'Recency': 'mean',
+        'Frequency': 'mean',
+        'Monetary': 'mean',
+        'RFM_Score': 'mean',
+        'Segment Category': 'first',
+        'Segment': 'size'  # Count occurrences of each segment
+    }).rename(columns={'Segment': 'Count'}).reset_index()
+    
+    # round into two decimal for all numeric column in rfm_by_segment
+    rfm_by_segment = rfm_by_segment.round(0)
+        
+        
+
+        
+#     fig_6 = px.scatter(
+#     rfm_by_segment, 
+#     x="Monetary", 
+#     y="Frequency",
+#     size="Count",  # You can change this to another metric if needed
+#     color=['rgb(173, 216, 230)', 'rgb(135, 206, 235)', 'rgb(176, 224, 230)',
+#            'rgb(255, 182, 193)', 'rgb(255, 192, 203)','rgb(250, 160, 180)']
+# ,  # 'Customers to Retain' and 'Customers to Concern'
+#     hover_name="Segment",  # Shows 'Best Customers', 'Almost Lost', etc.
+#     size_max=60,  # Controls maximum bubble size
+#     # log_x=True,  # Optional: Log scale for better distribution
+#     title="Customer Segmentation Bubble Chart"
+# )
+    
+    
+    fig_6 = px.scatter(
+    rfm_by_segment, 
+    x="Monetary", 
+    y="Frequency",
+    size="Count",
+    color="Segment",  # Using 'Segment' to categorize colors
+    hover_name="Segment",
+    size_max=60,
+    title="Customer Segmentation Bubble Chart",
+    color_discrete_map={  # Assign custom colors
+        'Almost Lost': 'rgb(176, 224, 230)', 
+        'Best Customers': 'rgb(93, 164, 214)',
+        'Less Valuable Customers': 'rgb(255, 192, 203)',
+        'Lost Cheap Customers': 'rgb(240, 128, 160)',
+        'Lost Customers': 'rgb(250, 160, 180)',
+        'Moderate Customers': 'rgb(142, 69, 133)',
+        'Valuable Customers': 'rgb(176, 224, 230)'
+    }
+)
+
+
+    # update layout fig_6 to rename x axis label as Monetary (AUD) and y label as Frequency (Number of Visit)
+    fig_6.update_layout(
+        xaxis_title="Monetary (AUD)",
+        yaxis_title="Frequency (Number of Visit)"
+    )
+    
+    st.plotly_chart(fig_6)
+    
+    
