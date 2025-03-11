@@ -10,6 +10,8 @@ import definition_rm_heatmap as def_rm_heatmap
 import definition_rf_scatter as def_rf_scatter
 import definition_rfm_table as def_rfm_table
 import definition_rfm_histogram as def_rfm_histogram
+import definition_rfm_bubble_chart as def_rfm_bubble_chart
+import definition_rfm_treemap as def_rfm_treemap
 
 
 
@@ -48,7 +50,11 @@ if file_uploaded is None:
     
 else:
     
-    df = pd.read_csv(file_uploaded)
+    # if file_uploaded is csv the pd.read_csv if xlsx then pd.read_excel
+    if file_uploaded.name.endswith('.xlsx'):
+        df = pd.read_excel(file_uploaded)
+    else:
+        df = pd.read_csv(file_uploaded)
     
 
     # if df doesn't contain columns 'Patient ID', 'Date', and 'Revenue ($)' 
@@ -520,6 +526,9 @@ else:
 
         st.plotly_chart(fig_5)
             
+        with st.popover("Understanding Customer Segmentation Treemap"):
+            def_rfm_treemap.app()           
+            
             
         rfm_by_segment = rfm.groupby('Segment').agg({
             'Recency': 'mean',
@@ -579,5 +588,8 @@ else:
         )
         
         st.plotly_chart(fig_6)
+        
+        with st.popover("Understanding Customer Segmentation Bubble Chart"):
+            def_rfm_bubble_chart.app()
         
         
