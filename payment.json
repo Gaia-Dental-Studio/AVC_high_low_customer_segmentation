@@ -1,0 +1,1589 @@
+{
+	"code": 200,
+	"status": "OK",
+	"data": {
+		"code": 200,
+		"status": "OK",
+		"total": 92,
+		"data": [
+			{
+				"id": "eeee0e34-c91f-4685-8ae3-89192a6ed19e",
+				"treatment_plan_id": "1f1b0655-8e54-442c-bc35-b2f4217f612e",
+				"patient": {
+					"id": "07aca7c3-563e-4461-82ac-9740de4db987",
+					"firstname": "Ziadatun ",
+					"lastname": "Nikmah",
+					"gender": "",
+					"phone_number": "085733029461",
+					"email": "ziadatunn@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-555220",
+				"total": 2500000,
+				"discount": 2151000,
+				"subtotal": 349000,
+				"payment_history_total": 349000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-29T05:05:42.501571Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "a7ad0651-143c-4b50-8ef1-b5643e8f98dc",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "1f1b0655-8e54-442c-bc35-b2f4217f612e",
+							"patient_id": "07aca7c3-563e-4461-82ac-9740de4db987",
+							"name": "Treatment Kamis, 29 Februari 2024",
+							"note": ""
+						},
+						"discount": 450000,
+						"vouchers": null
+					},
+					{
+						"id": "1280a9a6-edc7-4147-8427-4dda6ddbbbf4",
+						"packages": {
+							"id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+							"name": "Basic Scaling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "56760c8d-e946-44e6-9c56-844ea32b2f6c",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Cleaning - per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "81a3bb04-2fcb-45d3-ab99-89a4a402e13e",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "1f1b0655-8e54-442c-bc35-b2f4217f612e",
+							"patient_id": "07aca7c3-563e-4461-82ac-9740de4db987",
+							"name": "Treatment Kamis, 29 Februari 2024",
+							"note": ""
+						},
+						"discount": 351000,
+						"vouchers": null
+					},
+					{
+						"id": "33feb4de-013b-494c-ac72-3b8fa221d0bb",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "1f1b0655-8e54-442c-bc35-b2f4217f612e",
+							"patient_id": "07aca7c3-563e-4461-82ac-9740de4db987",
+							"name": "Treatment Kamis, 29 Februari 2024",
+							"note": ""
+						},
+						"discount": 450000,
+						"vouchers": null
+					},
+					{
+						"id": "34efe22f-ab07-4bee-971f-09830a4956fd",
+						"packages": {
+							"id": "6478abc4-f273-4214-83cc-258612b68672",
+							"name": "Advanced Filling",
+							"price": 1000000,
+							"gin_variations": [
+								{
+									"id": "f1a00887-229e-4337-a6db-6511ff9d3957",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Pulp capping",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "546c26eb-d190-4226-940f-84257985d258",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "853253f0-8d97-420f-8356-cca5bce7d02c",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Temporary filling - per tooth, per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "ecbd136a-5eda-4e19-a5ac-01978e40f8f0",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "b69e5150-cf75-4e7e-9c96-96c25f16f1e8",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "8c96053b-253c-42dc-9db0-e83b00ceb044",
+									"package_id": "6478abc4-f273-4214-83cc-258612b68672",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "1f1b0655-8e54-442c-bc35-b2f4217f612e",
+							"patient_id": "07aca7c3-563e-4461-82ac-9740de4db987",
+							"name": "Treatment Kamis, 29 Februari 2024",
+							"note": ""
+						},
+						"discount": 900000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "95c7832c-aaff-49ae-9899-5ac035f4c1b1",
+				"treatment_plan_id": "acadb3be-30c0-4506-b79b-9e20724cb148",
+				"patient": {
+					"id": "14b82058-36ee-4f0b-8dd9-d2655017dc0a",
+					"firstname": "Washana Putri",
+					"lastname": "Paramitha Wardhani",
+					"gender": "",
+					"phone_number": "082230602711",
+					"email": "putri.pw2@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-846540",
+				"total": 500000,
+				"discount": 450000,
+				"subtotal": 50000,
+				"payment_history_total": 50000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-24T09:55:45.237793Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "d4b4aa34-10e5-405c-a5c0-bce84ae4cf90",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "acadb3be-30c0-4506-b79b-9e20724cb148",
+							"patient_id": "14b82058-36ee-4f0b-8dd9-d2655017dc0a",
+							"name": "Treatment Rabu, 24 Mei 2023",
+							"note": ""
+						},
+						"discount": 450000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "b367b5cf-8dd3-48d6-a248-9671d189fece",
+				"treatment_plan_id": "928944b3-0410-4148-a6e5-bfdab2ecd473",
+				"patient": {
+					"id": "2fb7512a-33d1-49df-af38-79824781b1a9",
+					"firstname": "Widha ",
+					"lastname": "Rayuningtyas ",
+					"gender": "",
+					"phone_number": "085604110134",
+					"email": "widharayuning97@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-659650",
+				"total": 750000,
+				"discount": 700000,
+				"subtotal": 50000,
+				"payment_history_total": 50000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-23T03:25:18.835632Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "740ead8a-0b67-4969-8d1c-a74a7f79ca15",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "928944b3-0410-4148-a6e5-bfdab2ecd473",
+							"patient_id": "2fb7512a-33d1-49df-af38-79824781b1a9",
+							"name": "Treatment Jumat, 23 Februari 2024",
+							"note": ""
+						},
+						"discount": 250000,
+						"vouchers": null
+					},
+					{
+						"id": "c5e333a8-70e6-4d48-85bd-9fa67655f4ea",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "928944b3-0410-4148-a6e5-bfdab2ecd473",
+							"patient_id": "2fb7512a-33d1-49df-af38-79824781b1a9",
+							"name": "Treatment Jumat, 23 Februari 2024",
+							"note": ""
+						},
+						"discount": 450000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "9ac51df9-2df3-40c5-b2f1-96a5b284b515",
+				"treatment_plan_id": "7df944e9-4a31-49ae-a5b7-f23dbb92eb43",
+				"patient": {
+					"id": "fdcda4c4-a180-4b05-9ef8-bf1cefc462ca|rec2OefVkgOtoxdmy",
+					"firstname": "Cynthya",
+					"lastname": "Pramudita",
+					"gender": "",
+					"phone_number": "081283281308",
+					"email": "cyn2_89@yahoo.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "b0c6544b-6bed-45c1-881a-1063b9e07966",
+					"name": "Nadya Savira Giyansyah"
+				},
+				"branch": {
+					"id": "f3197438-837b-4bc7-afa4-ded8032694a2",
+					"name": "GAIA - Graha Natura",
+					"code": "GN GAIA"
+				},
+				"code": "GA-688462",
+				"total": 750000,
+				"discount": 601000,
+				"subtotal": 149000,
+				"payment_history_total": 149000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-20T02:43:32.474946Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "b17ad3c5-d7e2-4095-96fe-256df1004880",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "7df944e9-4a31-49ae-a5b7-f23dbb92eb43",
+							"patient_id": "fdcda4c4-a180-4b05-9ef8-bf1cefc462ca|rec2OefVkgOtoxdmy",
+							"name": "Treatment 1 Selasa, 20 Februari 2024",
+							"note": ""
+						},
+						"discount": 250000,
+						"vouchers": null
+					},
+					{
+						"id": "c2540c48-354f-454d-9163-b118ce264a5b",
+						"packages": {
+							"id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+							"name": "Basic Scaling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "56760c8d-e946-44e6-9c56-844ea32b2f6c",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Cleaning - per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "81a3bb04-2fcb-45d3-ab99-89a4a402e13e",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "7df944e9-4a31-49ae-a5b7-f23dbb92eb43",
+							"patient_id": "fdcda4c4-a180-4b05-9ef8-bf1cefc462ca|rec2OefVkgOtoxdmy",
+							"name": "Treatment 1 Selasa, 20 Februari 2024",
+							"note": ""
+						},
+						"discount": 351000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "69c349e1-8fa2-4f23-9e75-4af0b9d1b586",
+				"treatment_plan_id": "b6ec655a-e97d-4547-93ad-8cf0ee4e0958",
+				"patient": {
+					"id": "7d0f8d70-d6ff-432a-b4a9-4eea096ac769|recHYo82iCTP7A6ow",
+					"firstname": "Tissa Ayu",
+					"lastname": "Astria",
+					"gender": "",
+					"phone_number": "087855570193",
+					"email": "tissaayuastria@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-538908",
+				"total": 750000,
+				"discount": 601000,
+				"subtotal": 149000,
+				"payment_history_total": 149000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-17T06:11:55.562857Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "952a38b2-2cbc-42da-86dd-534d1ccf4c69",
+						"packages": {
+							"id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+							"name": "Basic Scaling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "56760c8d-e946-44e6-9c56-844ea32b2f6c",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Cleaning - per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "81a3bb04-2fcb-45d3-ab99-89a4a402e13e",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "b6ec655a-e97d-4547-93ad-8cf0ee4e0958",
+							"patient_id": "7d0f8d70-d6ff-432a-b4a9-4eea096ac769|recHYo82iCTP7A6ow",
+							"name": "Treatment Sabtu, 17 Februari 2024",
+							"note": ""
+						},
+						"discount": 351000,
+						"vouchers": null
+					},
+					{
+						"id": "17533473-13e5-4929-8434-63e25b2ae301",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "b6ec655a-e97d-4547-93ad-8cf0ee4e0958",
+							"patient_id": "7d0f8d70-d6ff-432a-b4a9-4eea096ac769|recHYo82iCTP7A6ow",
+							"name": "Treatment Sabtu, 17 Februari 2024",
+							"note": ""
+						},
+						"discount": 250000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "02a56944-db14-430f-a390-c936be11d9ed",
+				"treatment_plan_id": "aa37b74f-7ea8-4145-9506-dd87faee9d62",
+				"patient": {
+					"id": "d798a931-cdc8-46b5-baf2-1c4f9ac2015b|receBRJ5Ko5aNYWwL",
+					"firstname": "Olga",
+					"lastname": "Hilman Noverian",
+					"gender": "",
+					"phone_number": "081252355612",
+					"email": "landameyta@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-682288",
+				"total": 1750000,
+				"discount": 851000,
+				"subtotal": 899000,
+				"payment_history_total": 899000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-13T07:26:50.917507Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "efe043f8-295b-4162-b9e0-46c0fd5d6f19",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "aa37b74f-7ea8-4145-9506-dd87faee9d62",
+							"patient_id": "d798a931-cdc8-46b5-baf2-1c4f9ac2015b|receBRJ5Ko5aNYWwL",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 125000,
+						"vouchers": null
+					},
+					{
+						"id": "a2a6d5ec-4a29-43d9-8f47-565f3dd85708",
+						"packages": {
+							"id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+							"name": "Basic Scaling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "56760c8d-e946-44e6-9c56-844ea32b2f6c",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Cleaning - per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "81a3bb04-2fcb-45d3-ab99-89a4a402e13e",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "aa37b74f-7ea8-4145-9506-dd87faee9d62",
+							"patient_id": "d798a931-cdc8-46b5-baf2-1c4f9ac2015b|receBRJ5Ko5aNYWwL",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 351000,
+						"vouchers": null
+					},
+					{
+						"id": "5b20ea79-44e0-4b68-8c25-98ecdbcc641c",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "aa37b74f-7ea8-4145-9506-dd87faee9d62",
+							"patient_id": "d798a931-cdc8-46b5-baf2-1c4f9ac2015b|receBRJ5Ko5aNYWwL",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 125000,
+						"vouchers": null
+					},
+					{
+						"id": "979d8c49-c128-469e-9536-6e5e0bd527ea",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "aa37b74f-7ea8-4145-9506-dd87faee9d62",
+							"patient_id": "d798a931-cdc8-46b5-baf2-1c4f9ac2015b|receBRJ5Ko5aNYWwL",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 250000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "625108a9-0c6c-446b-a694-7f3fcab5d51f",
+				"treatment_plan_id": "5dbbbaaa-7484-4d6f-9c1c-bbfccbf12693",
+				"patient": {
+					"id": "d234be9c-cebd-4fa7-884c-a94f9ebf210a|recPz0n050czGmZFj",
+					"firstname": "Yulanda",
+					"lastname": "Korimesinta",
+					"gender": "",
+					"phone_number": "081252355612",
+					"email": "landameyta@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "b0c6544b-6bed-45c1-881a-1063b9e07966",
+					"name": "Nadya Savira Giyansyah"
+				},
+				"branch": {
+					"id": "f3197438-837b-4bc7-afa4-ded8032694a2",
+					"name": "GAIA - Graha Natura",
+					"code": "GN GAIA"
+				},
+				"code": "GA-218932",
+				"total": 750000,
+				"discount": 601000,
+				"subtotal": 149000,
+				"payment_history_total": 149000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-13T06:37:22.568651Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "e042f522-a690-4291-a60d-c2d6af00759d",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "5dbbbaaa-7484-4d6f-9c1c-bbfccbf12693",
+							"patient_id": "d234be9c-cebd-4fa7-884c-a94f9ebf210a|recPz0n050czGmZFj",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 250000,
+						"vouchers": null
+					},
+					{
+						"id": "191983d7-fd93-4859-9e64-0676762fe1c9",
+						"packages": {
+							"id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+							"name": "Basic Scaling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "56760c8d-e946-44e6-9c56-844ea32b2f6c",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Cleaning - per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "81a3bb04-2fcb-45d3-ab99-89a4a402e13e",
+									"package_id": "b74f1264-23ee-46ed-be3b-030b6301383b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "5dbbbaaa-7484-4d6f-9c1c-bbfccbf12693",
+							"patient_id": "d234be9c-cebd-4fa7-884c-a94f9ebf210a|recPz0n050czGmZFj",
+							"name": "Treatment Selasa, 13 Februari 2024",
+							"note": ""
+						},
+						"discount": 351000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "f5ed5fd1-82a7-490c-946d-ca6c74efc729",
+				"treatment_plan_id": "c6d9274b-e539-4f7b-a16c-465e2eb39861",
+				"patient": {
+					"id": "80919c95-315a-489f-8c2d-322010627682|recoYgexVKcOkjDac",
+					"firstname": "test input",
+					"lastname": "dob 2",
+					"gender": "",
+					"phone_number": "0864646666",
+					"email": "testinput@dob2.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "e1ce2bf9-82ca-4b15-88f7-fa72150cc1b9",
+					"name": "Agus Setiadi Drg"
+				},
+				"branch": {
+					"id": "f3197438-837b-4bc7-afa4-ded8032694a2",
+					"name": "GAIA - Graha Natura",
+					"code": "GN GAIA"
+				},
+				"code": "GA-781533",
+				"total": 450000,
+				"discount": 100000,
+				"subtotal": 350000,
+				"payment_history_total": 350000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-07T14:27:19.222663Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "f3068db7-60fd-4003-adb5-380cbf2500e6",
+						"packages": {
+							"id": "6fc491c8-ef69-48b0-9022-60a1f2f3a659",
+							"name": "Basic Tooth Extraction",
+							"price": 450000,
+							"gin_variations": [
+								{
+									"id": "78758d37-42ed-4b66-964d-b5dc2d3b95a4",
+									"package_id": "6fc491c8-ef69-48b0-9022-60a1f2f3a659",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4bd037c5-658e-4f51-bbdf-fd4a104efa61",
+									"package_id": "6fc491c8-ef69-48b0-9022-60a1f2f3a659",
+									"no": "",
+									"name": "Permanent tooth - per tooth",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "795bbaf9-a7e8-4042-97bd-377c6c666396",
+									"package_id": "6fc491c8-ef69-48b0-9022-60a1f2f3a659",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "e3e6527c-6f4c-420a-a06d-14cbf7e12b7d",
+									"package_id": "6fc491c8-ef69-48b0-9022-60a1f2f3a659",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "c6d9274b-e539-4f7b-a16c-465e2eb39861",
+							"patient_id": "80919c95-315a-489f-8c2d-322010627682|recoYgexVKcOkjDac",
+							"name": "Treatment Rabu, 03 Januari 2024",
+							"note": ""
+						},
+						"discount": 100000,
+						"vouchers": [
+							"07037e99-3049-4057-9bad-b2486fe902a6"
+						]
+					}
+				]
+			},
+			{
+				"id": "df4b1320-2c68-4091-bcdf-b15ef2218fdc",
+				"treatment_plan_id": "db33f4cf-a13d-454d-bf77-9ef755aa0b9f",
+				"patient": {
+					"id": "6b7f0db9-b3a3-49b4-a5a3-7c262ed0272c",
+					"firstname": "Muhammad Nauval ",
+					"lastname": "El Ghiffary",
+					"gender": "",
+					"phone_number": "085730050123",
+					"email": "nauval.eg@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "b0c6544b-6bed-45c1-881a-1063b9e07966",
+					"name": "Nadya Savira Giyansyah"
+				},
+				"branch": {
+					"id": "f3197438-837b-4bc7-afa4-ded8032694a2",
+					"name": "GAIA - Graha Natura",
+					"code": "GN GAIA"
+				},
+				"code": "GA-422424",
+				"total": 250000,
+				"discount": 125000,
+				"subtotal": 125000,
+				"payment_history_total": 125000,
+				"status": "Paid",
+				"details": null,
+				"created_at": "2024-02-07T06:16:00.427082Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "98731685-55fb-461c-92f1-9f29568d5adb",
+						"packages": {
+							"id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+							"name": "Consultation and Examination",
+							"price": 250000,
+							"gin_variations": [
+								{
+									"id": "6e886ba5-34da-4cb8-b1db-d89f6c0c7751",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Periapical/bitewing radiograph - direct per appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "4ab522ab-a133-4214-bd11-75609f172c22",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "3f7faa31-73d8-4949-b6e9-653a3bb23703",
+									"package_id": "c6bea324-5eca-48ce-9ca5-0e088029820b",
+									"no": "",
+									"name": "Direct Photo - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "db33f4cf-a13d-454d-bf77-9ef755aa0b9f",
+							"patient_id": "6b7f0db9-b3a3-49b4-a5a3-7c262ed0272c",
+							"name": "Treatment Rabu, 07 Februari 2024",
+							"note": ""
+						},
+						"discount": 125000,
+						"vouchers": null
+					}
+				]
+			},
+			{
+				"id": "3389b350-d332-4d3b-8c78-1729f0929d78",
+				"treatment_plan_id": "6d9c3f7e-84f4-4d36-bfb4-c2c1ba9711af",
+				"patient": {
+					"id": "6242b0f6-7b81-4179-b487-cb8311f8dc7d|recqBSbp3pUlbXh3s",
+					"firstname": "Rosnive",
+					"lastname": "Rosnive",
+					"gender": "",
+					"phone_number": "081233787528",
+					"email": "rosnive@gmail.com",
+					"last_visit_date": "0001-01-01T00:00:00Z",
+					"last_visit_location": "",
+					"medical_history_allergies": "",
+					"medical_history_illness": "",
+					"medical_history_notes": "",
+					"dob": "",
+					"education": "",
+					"occupation": "",
+					"income_level": "",
+					"home_phone_number": "",
+					"idNumber": "",
+					"identity_number": "",
+					"billing": null,
+					"general_medical_history": null,
+					"teeth_medical_history": null,
+					"patient_address": null,
+					"health_fund": null
+				},
+				"docter": {
+					"id": "43a88c17-b3fd-4c71-ac8c-34d5df8155a6",
+					"name": "Natalia Ika Wibisono"
+				},
+				"branch": {
+					"id": "cd76bc59-72c7-461c-addf-eeb58e7c2a38",
+					"name": "Klinik Gaia 1",
+					"code": "gaia1"
+				},
+				"code": "GA-806735",
+				"total": 500000,
+				"discount": 500000,
+				"subtotal": 0,
+				"payment_history_total": 0,
+				"status": "Full Discount",
+				"details": null,
+				"created_at": "2024-02-06T04:15:34.728887Z",
+				"updated_at": "0001-01-01T00:00:00Z",
+				"invoice_services": [
+					{
+						"id": "84732fe4-32ad-4183-ab6e-5d5ecf9648b5",
+						"packages": {
+							"id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+							"name": "Basic Filling",
+							"price": 500000,
+							"gin_variations": [
+								{
+									"id": "4d466ca1-f6ff-4548-b3b0-fd30e82ce7d4",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Resin based, any surface or per tooth - per direct appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "f6dcd8ad-3e7a-4f44-9188-1020ffda3842",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Consultation - per one session",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "c652f932-bdc5-4ffe-a985-672cdbb570cc",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Local Anasthesia - direct per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								},
+								{
+									"id": "a3dd006d-e0e6-4887-9c30-6d160b33de21",
+									"package_id": "0a4618b8-fb6e-467d-a7b8-4aa4f334b44b",
+									"no": "",
+									"name": "Direct Filling - per clinic appointment",
+									"uom": "",
+									"designation": "",
+									"allocated_time": 0,
+									"country_id": "",
+									"procedure": null
+								}
+							]
+						},
+						"treatment_plan": {
+							"id": "6d9c3f7e-84f4-4d36-bfb4-c2c1ba9711af",
+							"patient_id": "6242b0f6-7b81-4179-b487-cb8311f8dc7d|recqBSbp3pUlbXh3s",
+							"name": "Treatment Selasa, 06 Februari 2024",
+							"note": ""
+						},
+						"discount": 500000,
+						"vouchers": null
+					}
+				]
+			}
+		]
+	}
+}

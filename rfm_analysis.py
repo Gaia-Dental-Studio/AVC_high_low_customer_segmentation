@@ -241,7 +241,7 @@ else:
         
 
         with st.popover("Understanding Patient Distrubution by RFM Score"):
-            def_rfm_histogram
+            def_rfm_histogram.app()
 
             
             # # 3. RFM Segment Swarm Plot (Horizontal)
