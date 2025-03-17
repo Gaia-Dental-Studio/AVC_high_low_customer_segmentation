@@ -68,7 +68,7 @@ token = response.json()['data']['token']
 
 
 # Define URL and token
-url = "https://api-dev-gaia-clinic.senyum.in/invoice/findAll?limit=10&page=0&sort_field=created_at&sort_mode=2"
+url = "https://api-dev-gaia-clinic.senyum.in/invoice/findAll?limit=10&page=2&sort_field=created_at&sort_mode=2"
 headers = {
     "accept": "application/json",
     "Authorization": f"Bearer {token}"  # Replace with your actual token
